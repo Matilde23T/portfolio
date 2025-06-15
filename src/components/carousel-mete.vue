@@ -1,7 +1,7 @@
 <template>
    <div class="container-crl">
-  <Swiper :modules="[EffectCoverflow, Pagination]"
-  :autoplay="{delay: 3000}"
+  <Swiper :modules="[EffectCoverflow, Pagination, Autoplay]"
+  :autoplay="{delay: 5000}"
     :pagination="true"
    :effect="'coverflow'"
   :grabCursor="true"
@@ -13,7 +13,10 @@
     depth: 100,
     modifier: 1,
     slideShadows: true,
+    
   }"
+
+   
   
    >
     <swiper-slide>
@@ -62,6 +65,9 @@ import { Autoplay} from "swiper/modules";
   import 'swiper/css/effect-coverflow';
   import 'swiper/css/pagination';
 
+
+
+  
   
 
   // import required modules
@@ -87,19 +93,52 @@ import img10 from '@/assets/img/about-crl/yellowstone-crl.jpg'
 </script>
 
 <style scoped>
+
+
 .container-crl{
     width: 80%;
     
 }
 .swiper{
-     width: 80%;
+     width: 100%;
   height: 600px;
+ 
 }
 
 .swiper-slide img{
-    width: 800px;
+    width: 850px;
     height:500px;
     
 }
 
+.swiper-slide{
+
+width: 850px;
+height: 500px;
+}
+
+
+
+/*
+.container-crl {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.swiper-slide {
+  width: 800px;
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 12px; 
+}
+*/
 </style>

@@ -67,7 +67,7 @@ Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più cons
 
 <div class="sub-title">
         <div class="border-effect">
-        <h1>Perche noi?</h1>
+        <h1>Scopri le destinazioni </h1>
         </div>
     </div>
 
@@ -76,6 +76,37 @@ Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più cons
 <div class="carousel-mete">
     <slot name="carousel-mete"></slot>
 </div>
+
+
+<!---prova recnsioni-->
+<div class="sub-title">
+        <div class="border-effect">
+        <h1>Cosa dicono i nostri clienti? </h1>
+        </div>
+    </div>
+
+    <div class="recensioni">
+        <div class="testo">
+
+<slot name="recensioni-about"></slot>
+</div>
+    </div>
+
+
+
+    <!---barra marchi -->
+
+    <div class="barra-marchi">
+        
+        <slot name="barra-marchi"></slot>
+    </div>
+
+
+
+    <!---footer section -->
+    <div class="footer">
+        <slot name="footer"></slot>
+    </div>
 </template>
 
 <script setup>
@@ -86,6 +117,9 @@ import viaggioimg from '@/assets/img/viaggio.png'
 import globoimg from '@/assets/img/globo.png'
 import metaimg from '@/assets/img/meta.png'
 import assimg from '@/assets/img/assistenza.png'
+
+
+
 </script>
 
 
@@ -111,7 +145,7 @@ import assimg from '@/assets/img/assistenza.png'
 }
 .border-effect{
     text-align: center;
-    width: 300px;
+    width: 400px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -217,6 +251,10 @@ gap: 20px;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
   }
+
+  .testo{
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -231,5 +269,49 @@ gap: 20px;
 }
 
 
+/* recensioni */
+
+.recensioni{
+    width: 100%;
+    margin-top: 30px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+ background-color: rgb(238, 237, 237);
+ margin-bottom: 30px;
+}
+
+
+
+.testo{
+    width: 80%;
+    height: 50vh;
+     font-family: "DM Sans", sans-serif;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* barra di nomi */
+
+
+.barra-marchi{
+  
+    width: 100%;
+    height: 30vh;
+}
+
+
+/*footer */
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(198, 198, 223);
+    display: flex;
+    justify-content: center;
+}
 
 </style>

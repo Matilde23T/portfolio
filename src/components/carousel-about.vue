@@ -62,7 +62,7 @@ const photos = [
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 90vh;
   
   padding: 0; 
 }
