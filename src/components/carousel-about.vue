@@ -62,8 +62,8 @@ const photos = [
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  
+  height: auto;
+
   padding: 0; 
 }
 
@@ -73,6 +73,9 @@ const photos = [
   
   box-sizing: border-box;
   position: relative;
+
+
+  text-align: center;
 }
 .swiper img{
    
@@ -85,7 +88,7 @@ const photos = [
 }
 
 .swiper-slide img{
-    width: 100%;
+    width: 90%;
     height:500px;
     
 }
@@ -94,9 +97,7 @@ const photos = [
   position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateX(-50%);
-  color: white;*/
-  /*text-align: center;*/
+  
  
   z-index: 10;
   
@@ -116,4 +117,28 @@ const photos = [
   color: #fff;
 }
 
+
+@media (max-width: 768px){
+  .container{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .swiper-slide{
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide img{
+    width: 100%;
+    height: 300px;
+  }
+
+  .testo{
+    font-size: 18px;
+    position: relative;
+    top: 30%;
+    
+  }
+}
 </style>

@@ -102,6 +102,7 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
   justify-content: center;
     font-family: "DM Sans", sans-serif;
     gap: 30px;
+    
 }
 
 
@@ -109,9 +110,10 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
     
     width: 400px;
     padding: 10px 20px;
-    height: 240px;
+    height: auto;
    font-size: 18px;
    border-right: 1px solid black;
+   
 }
 
 
@@ -123,7 +125,7 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
 .col2{
    
     width: 300px;
-    height: 240px;
+    height: auto;
    
      padding: 10px ;
      font-size: 18px;
@@ -150,9 +152,9 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
     color: black;
 }
 .col3{
-    height: 260px;
+    height: auto;
     width: 300px;
-  
+ 
    
 }
 
@@ -179,6 +181,57 @@ justify-content: center;
     text-align: center;
     font-size: 18px;
      font-family: "DM Sans", sans-serif;
+}
+
+@media (max-width: 768px){
+    .footer-sec h1{
+        font-size: 22px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .col1, .col2{
+       width: 80%;
+       border-right: none;
+       gap: 0px;
+       font-size: 14px;
+    }
+
+    .col2{
+        padding-left: 20px;
+        margin-top: 0px;
+    }
+
+    .col3{
+       width: 100%;
+       
+    }
+.col3 h3{
+    text-align: center;
+}
+.col3 ul{
+       list-style-type: none;
+    display: flex;
+    gap: 0px;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+     color: black;
+    
+     
+     
+}
+
+    .info-srl{
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
 }
 
 </style>

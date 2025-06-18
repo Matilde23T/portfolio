@@ -1,5 +1,7 @@
 <template>
+    <div class="navbar">
  <slot name="navbar"></slot>
+</div>
 
     <div class="titolo">
         <p>Wayfinder travel</p>
@@ -19,14 +21,18 @@
         <img :src="Teamimg" class="image">
     </div>
     <div class="div-description">
+        <div class="description">
         <p>
 Siamo un gruppo di amici, esploratori e sognatori che hanno trasformato la passione per il viaggio in un progetto di vita.
 <br>
+<br>
  Dopo aver condiviso cime, sentieri e tramonti in ogni angolo del mondo, abbiamo deciso di fondare un’agenzia che mette al centro le esperienze autentiche, le connessioni umane e la bellezza dell’avventura.
-
+<br>
+<br>
 Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più consapevole, emozionante e vero. Dalle vette dell’Himalaya alle spiagge più remote, siamo qui per costruire insieme il tuo prossimo ricordo indimenticabile.
 
         </p>
+        </div>
     </div>
  </div>
  <div class="sub-title">
@@ -66,9 +72,9 @@ Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più cons
 <!---------------------------------CAROUSEL METE-------------------------------->
 
 <div class="sub-title">
-        <div class="border-effect">
-        <h1>Scopri le destinazioni </h1>
-        </div>
+       <button class="viaggiBtn">
+<RouterLink to="/serivzi">Scopri le destinazioni</RouterLink>
+       </button>
     </div>
 
 
@@ -125,6 +131,14 @@ import assimg from '@/assets/img/assistenza.png'
 
 <style scoped>
 
+
+/*titolo e carousel iniziale */
+.navbar{
+    width: 100%;
+    height: 5vh;
+   
+    margin-bottom: 40px;
+}
 .titolo {
  
   width: 100%;
@@ -132,15 +146,27 @@ import assimg from '@/assets/img/assistenza.png'
   justify-content: center;
   font-family: "DM Serif Text", serif;
   font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
  
 
 }
+/*carousel primo */
+.slot-carousel{
+   margin-bottom: 50px;
+   height: auto;
+   
+}
 
+/*titoli di inizio sezione */
 .sub-title{
     
     display: flex;
     justify-content: center;
     font-family: "DM Serif Text", serif;
+    
+    
     
 }
 .border-effect{
@@ -148,15 +174,62 @@ import assimg from '@/assets/img/assistenza.png'
     width: 400px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
 }
+/*bottone destinazioni */
+.viaggiBtn{
+    width: 400px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: violet;
+    border: none;
+}
+
+.viaggiBtn:hover{
+    background-color: aqua;
+}
+.viaggiBtn a{
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    
+}
+
+@media (max-width:768px){
+    .viaggiBtn{
+        
+        width: 70%;
+        height: 60px;
+        
+    }
+
+    .viaggiBtn a{
+        font-size: 20px;
+    }
+}
+
+@media (width: 768px){
+    .viaggiBtn{
+        
+        width: 40%;
+    }
+}
+
+/*sezione chi siamo  */
 .section-row{
     width: 100%;
-    
+   
     display: flex;
     margin-top: 50px;
-    height: 60vh;
+    margin-bottom: 50px;
+    height: auto;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .div-img{
@@ -164,23 +237,93 @@ import assimg from '@/assets/img/assistenza.png'
     width: 50%;
     display: flex;
     justify-content: center;
+    
+    height: 500px;
   
 }
 .image{
     width: 700px;
     height: 500px;
+   
  
 }
 
 .div-description{
-    width: 40vw;
-   
+    width: 50%;
      font-family: "DM Sans", sans-serif;
      font-size: 25px;
-     padding: 30px 25px;
-     gap: 10px;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     height: 500px;
+    
+
+}
+
+.description{
+    height: auto;
+    width: 80%;
+  
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid black;
      border-right: 1px solid black;
-     border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .section-row {
+        flex-direction: column;
+         /* imposta disposizione verticale su mobile */
+    }
+    .div-img,
+    .div-description {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .image {
+        width: 90%; 
+        height: auto;
+    }
+
+    .description {
+        font-size: 18px;
+      
+        margin-top: 20px; 
+        width: 90%;
+       
+         
+    }
+}
+@media (min-width: 800px) and (max-width:1280px){
+.image{
+    width: 700px;
+    height: auto;
+}
+.section-row{
+    flex-direction: column;
+}
+.div-description, .div.img{
+    width: 100%;
+     padding-left: 10px;
+    padding-right: 10px;
+    
+   
+}
+.description {
+        font-size: 18px;
+        height: 400px;
+       
+       
+         
+    }
+
+   .div-description{
+    margin-top: 30px;
+   }
+
 }
 
 
@@ -189,45 +332,34 @@ import assimg from '@/assets/img/assistenza.png'
 .prova-grid{
     width: 100%;
     background-color: rgb(238, 237, 237);
-    height: 40vh;
-
-
+    height: auto;
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     margin-top: 40px;
     margin-bottom: 50px;
   
 }
 
-/*.parent {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 2px;
-background-color: green;
-}
- */
+
 
  .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  
- 
-
-
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   width: 80%;
-gap: 20px;
+  gap: 40px;
   height: fit-content;
+  
 }
 
 .item {
  
   padding: 10px;
   text-align: center;
+  
 
   
   width: 70%;
@@ -236,6 +368,8 @@ gap: 20px;
 
 .item h3{
     font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .item p{
@@ -243,29 +377,81 @@ gap: 20px;
 }
 .icons{
     width: 150px;
+   
 }
 
-/* Quando lo schermo è più stretto di 600px, mostra 1 colonna */
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .parent {
     grid-template-columns: 1fr;
     flex-wrap: wrap;
+    width: 100%;
+      
   }
 
-  .testo{
-    flex-wrap: wrap;
+  
+   .icons {
+    width: 90px; 
+    }
+
+.item {
+    width: 90%;
   }
+
+  .item p{
+    font-size: 18px;
+  }
+
+  .item h3{
+    font-size: 22px;
+  }
+  
 }
 
 
+@media (min-width:800px) and (max-width:1280px){
+
+    .parent{
+        width: 100%;
+        gap: 20px;
+       
+    }
+    
+
+    .icons{
+        width: 100px;
+    }
+
+    .item p{
+    font-size: 18px;
+    
+  }
+
+  .item h3{
+    font-size: 22px;
+  }
+}
+
+/**ipadmini */
+@media (width: 768px){
+    .item{
+       
+        width: 70%;
+    }
+
+     
+}
+/*carousel mete */
 
 .carousel-mete{
     width: 100%;
-    height: 90vh;
-    margin-top: 70px;
+    height:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
+   
 }
 
 
@@ -273,8 +459,9 @@ gap: 20px;
 
 .recensioni{
     width: 100%;
+    
     margin-top: 30px;
-    height: 50vh;
+    height: auto;
     display: flex;
     justify-content: center;
  background-color: rgb(238, 237, 237);
@@ -284,13 +471,42 @@ gap: 20px;
 
 
 .testo{
-    width: 80%;
-    height: 50vh;
+    width: 90%;
+    height: auto;
      font-family: "DM Sans", sans-serif;
     padding: 50px;
     display: flex;
     justify-content: center;
     gap: 20px;
+   
+}
+@media (max-width: 768px){
+    .recensioni{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .testo{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+}
+
+@media (min-width:800px) and (max-width:1024px){
+
+     
+    .recensioni{
+       
+        width: 100%;
+        flex-direction: column;
+       
+    }
+    .testo{
+        width: 100%;
+        padding-top: 0;
+        padding-left: 40px;
+    }
 }
 
 
@@ -300,7 +516,7 @@ gap: 20px;
 .barra-marchi{
   
     width: 100%;
-    height: 30vh;
+    height: auto;
 }
 
 
@@ -308,10 +524,13 @@ gap: 20px;
 
 .footer{
     width: 100%;
-    height: 50vh;
+    height: auto;
     background-color: rgb(198, 198, 223);
     display: flex;
     justify-content: center;
 }
+
+
+
 
 </style>

@@ -1,148 +1,114 @@
 <template>
- <nav class="navbar">
+  <nav>
+    <ul class="sidebar" v-if="isSidebarVisible">
+      <li class="close-button">
+        <button @click="closeSidebar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </li>
+     <li><RouterLink to="/">Home</RouterLink></li>
+      <li><RouterLink to="/about">About</RouterLink></li>
+      <li><RouterLink to="/services">Viaggi</RouterLink></li>
+      <li><RouterLink to="/contact">Contatti</RouterLink></li>
+    </ul>
 
-<ul>
-  <li>
-    <router-link  to="/">
-    <span class="text">Home</span>
-    </router-link>
-  </li>
-  <li>
-    <router-link  to="/about">
-    <span class="text">Chi siamo</span>
-    </router-link>
-  </li>
-  
-  
-  <li>
-    <router-link  to="/services">
-    <span class="text">Servizi</span>
-    </router-link>
-  </li>
-
-  <li>
-    <router-link  to="/contact">
-    <span class="text">contatti</span>
-    </router-link>
-  </li>
-</ul>
- </nav>
-
-    
-  
-
-
-
-
-
+    <button 
+    class="menu-button"
+  @click="openSidebar"
+  v-if="!isSidebarVisible">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+ 
 </template>
 
 
 
 
 <style scoped >
-.navbar {
-  margin-top: 30px;
-  width: 100%;
-  color: #fff;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
- 
-  gap: 20px;
-}
-
-.navbar li {
+ /*navabar*/
   
-  margin: 0 15px;
- 
-}
-
-.navbar .text {
-  color: black;
-  font-size: 25px;
-  font-weight: 200;
-  display: inline-block;
-   transition: transform 0.3s ease;
-   font-family: "DM Serif Text", serif;
-}
-
-.navbar a{
-  text-decoration: none;
-}
-
-.text:hover{
-  transform: translateY(-7px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.drop-btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  width: 160px;
-  border: none;
-  cursor: pointer;
-}
-
-
-.dropdown {
+  nav {
+  background-color: #3b50b2;
+  box-shadow: 3px 3px 5px rgba(245, 244, 244, 0.1);
   position: relative;
-  display: inline-block;
 }
 
-.material-icons{
-    margin-left: 1rem;
-    padding-top: 0.5rem;
-   
+.sidebar {
+  position: fixed;
+  top: 0;
+  
+
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: rgba(59, 80, 178, 0.64);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding-top: 20px;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+.sidebar li {
+  width: 100%;
+  list-style: none;
 }
-.dropdown-content li{
-  color: black;
-  padding: 12px 16px;
+
+.sidebar a {
+  width: 100%;
+  padding: 15px 30px;
   text-decoration: none;
+  color: white;
   display: block;
 }
-.dropdown-content li:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
- display: block;
+.close-button {
+  align-self: flex-end;
+  padding: 10px 20px;
 }
 
-.dropdown:hover .drop-btn {
-  background-color: #3e8e41;
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: block;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  z-index: 1000;
+  cursor: pointer;
+
 }
 
-.dropdown:hover .material-icons{
-    transform: rotate(180deg);
+@media (min-width: 801px) {
+  
 }
+  
+  
+
+
 </style>
+
+
+<script setup>
+import {ref } from 'vue'
+const isSidebarVisible = ref(false)
+const menuBtn = ref(true)
+
+function openSidebar() {
+  isSidebarVisible.value = true
+  
+}
+
+function closeSidebar() {
+  isSidebarVisible.value = false
+}
+
+
+
+</script>

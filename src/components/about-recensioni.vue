@@ -42,7 +42,7 @@
                 <span class="foto">
                       <img :src="peoplerew3" class="peoplerew1">
                 </span>
-                <span class="nome">Giorgia zanatta
+                <span class="nome">Giorgia 
                     <br>
                 </span>
                 </div>
@@ -75,28 +75,32 @@ import peoplerew3 from '@/assets/img/about-rec/foto3.jpg'
 
 
 <style scoped>
-
+/*foto */
 .peoplerew1{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    
+   
     margin-right: 10px;
+
+    
 }
 
 .nome{
     font-size: 25px;
     font-weight: 700;
     padding-top: 20px;
+   
 }
 
 
 .prima-rec{
-    width: 30%;
-    height: 70%;
-    
+    width: 100%;
+    height: auto;
     padding: 20px;
     border-left: 1px solid black;
+   margin-top: 40px;
+
     
 }
 
@@ -106,18 +110,77 @@ import peoplerew3 from '@/assets/img/about-rec/foto3.jpg'
     width: 300px;
     gap: 20px;
     padding: 10px;
-    
+   
 
 }
 
 .testo2{
     font-size: 18px;
+   
 }
 
 .testo2 .title{
     font-size: 22px;
     font-weight: 700;
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+.prima-rec{
+   
+   flex-direction: column;
+   
+}
+.testo2{
+
+width: 100%;
+font-size: 16px;
+}
+ .foto-nome {
+    width: 100%;
+    
+  }
+
+  .nome{
+    font-size: 20px;
+  }
+
+  .testo2 .title{
+    
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 
+@media (min-width:820px) and (max-width:1024px){
+.prima-rec{
+   
+   flex-direction: column;
+   
+}
+.testo2{
+
+width: 100%;
+font-size: 16px;
+}
+ .foto-nome {
+    width: 100%;
+    
+  }
+
+  .nome{
+    font-size: 20px;
+  }
+
+  .testo2 .title{
+    
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+}
 </style>

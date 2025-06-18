@@ -96,49 +96,169 @@ import img10 from '@/assets/img/about-crl/yellowstone-crl.jpg'
 
 
 .container-crl{
-    width: 80%;
+    width: 90%;
+    
+    height: auto;
     
 }
 .swiper{
      width: 100%;
   height: 600px;
+ padding-top: 40px;
+  
  
 }
 
 .swiper-slide img{
-    width: 850px;
+    width: 800px;
     height:500px;
+   
+}
+
+.swiper-slide{
+
+width: 800px;
+height: 500px;
+
+ 
+}
+
+
+
+
+@media (max-width: 768px){
+  .container-crl{
+    width: 90%;
+    
+}
+.swiper{
+  width: 100%;
+  height: 330px;
+  
+  
+}
+
+.swiper-slide img{
+    width:400px;
+    height:250px;
     
 }
 
 .swiper-slide{
 
-width: 850px;
-height: 500px;
+width:400px;
+height: 250px;
+}
 }
 
-
-
-/*
-.container-crl {
+@media (width:344px)  {
+.swiper{
   width: 100%;
-  max-width: 1200px;
-  padding: 0;
+  height: 300px;
+  
+  
+ 
+}
+.swiper-slide img{
+    width:350px;
+    height:220px;
+    
 }
 
-.swiper-slide {
-  width: 800px;
-  height: 400px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.swiper-slide{
+   width: 350px;
+   height: 220px;
+    
+  }
 }
 
-.swiper-slide img {
+
+@media (width:360px)  {
+.swiper{
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  border-radius: 12px; 
+  height: 300px;
+  
+  
+ 
 }
-*/
+.swiper-slide img{
+    width:350px;
+    height:220px;
+    
+}
+
+.swiper-slide{
+   width: 350px;
+   height: 220px;
+    
+  }
+}
+
+@media (width:540px)  {
+.swiper{
+  width: 100%;
+  height: 300px;
+  
+ 
+ 
+}
+.swiper-slide img{
+    width:350px;
+    height:220px;
+    
+}
+
+.swiper-slide{
+   width: 350px;
+   height: 220px;
+    
+  }
+}
+
+
+@media (min-width:800px) and (max-width:920px){ 
+    
+
+   .swiper{
+    
+    width: 100%;
+    height: 400px;
+   
+   
+   
+  }
+  .swiper-slide img{
+   width: 500px;
+   height: 320px;
+  }
+  
+
+  .swiper-slide{
+   width: 500px;
+   height: 320px;
+   
+  }
+  
+  
+}
+
+
+@media (min-width:1024px) and (max-width:1280px){
+  .swiper{
+    
+    width: 100%;
+    height: 480px;
+   
+  }
+  .swiper-slide img{
+   width: 600px;
+   height: 400px;
+  }
+
+  .swiper-slide{
+   width: 600px;
+   height: 400px;
+    
+  }
+}
 </style>

@@ -33,21 +33,44 @@ import forbes from '@/assets/img/about-marchi/forbes.png'
     font-size: 22px;
     font-family: "DM Sans", sans-serif;
    margin-top: 60px;
+ 
 }
 
 
 .marchi{
     width: 100%;
-    background-color: #e0d0d0;
+    height: auto;
+    
    text-align: center;
    
 }
 
 .imgmarchio{
     width: 200px;
-   
     margin: 20px;
 }
 
+@media (max-width: 768px){
 
+    .titolo{
+        font-size: 16px;
+        margin-bottom: 20px;
+        
+    }
+    .imgmarchio{
+        width: 130px;
+        
+        margin: 5px;
+    }
+    .marchi{
+        margin-bottom: 40px;
+        
+    }
+}
+ @media(min-width:820px) and (max-width:1024px){
+    .titolo{
+        font-size: 18px;
+    
+    }
+ }
 </style>
