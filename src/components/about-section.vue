@@ -183,7 +183,7 @@ import assimg from '@/assets/img/assistenza.png'
     width: 400px;
     height: 70px;
     border-radius: 20px;
-    background-color: violet;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% );
     border: none;
 }
 

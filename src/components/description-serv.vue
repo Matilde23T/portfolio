@@ -3,15 +3,14 @@
         <div class="box-testo">
         <p class="titolo">Wayfind Travel – Il viaggio come lo vuoi tu.</p>
 <p class=" testo">
-Che tu sogni l’adrenalina di un trekking sotto l'aurora boreale, un tuffo tra i coralli con maschera e boccaglio, o un'immersione totale nella cultura di eventi come il Día de los Muertos, Wayfind Travel è il partner perfetto per trasformare
- <span class="strong">ogni desiderio in un'esperienza memorabile.</span>
+Che tu sogni un trekking dai panorami mozzafiato, uno snorkeling tra i coralli o un tuffo nelle tradizioni, Wayfind Travel trasforma <span class="strong">i tuoi desideri in esperienze indimenticabili.</span> 
+<br>
+Dalle <span class="strong">avventure nella natura al relax in spiagge da sogno</span>, fino ai viaggi culturali più autentici: abbiamo <span class="strong">proposte per ogni stile e curiosità.</span>
+Scopri il nostro <span class="strong">catalogo online o crea il tuo viaggio su misura</span> con i nostri esperti, pronti a <span class="strong">guidarti passo dopo passo.</span>
 
 
-<br>
-Dalle avventure naturalistiche al <span class="strong">relax più assoluto</span> su spiagge da sogno, fino ai viaggi culturali ricchi di storia e tradizioni: <span class="strong">copriamo tutte le tipologie di viaggio, con proposte pensate per ogni stile, ritmo e curiosità.
-    </span>
-<br>
-Scopri il nostro <span class="strong">>catalogo online</span> ricco di destinazioni esclusive oppure <span class="strong">crea il tuo viaggio su misura</span> insieme ai nostri esperti: professionisti appassionati pronti ad accompagnarti passo dopo passo verso <span class="strong">il viaggio che hai sempre immaginato</span>
+
+
 </p>
 
 <p class="sotto-testo">
@@ -24,12 +23,12 @@ Con Wayfind Travel, non parti solo. Parti ispirato.</p>
 <style scoped>
 .descrizionebox{
     width: 100%;
-    height: 38vh;
+    height: 300px;
     background-color: orange;
     
  display: flex;
  justify-content: center;
- margin-bottom: 90px;
+ margin-bottom: 30px;
     }
 .box-testo{
     
@@ -58,4 +57,37 @@ font-size: 23px;
        margin-top: 20px;
 }
 
+
+@media (max-width:768px){
+    .descrizionebox{
+    width: 100%;
+    height: 620px;
+    background-color: rgb(6, 182, 64);
+    
+ margin-bottom: 30px;
+
+    }
+
+    .box-testo{
+    
+    width: 80%;
+    height: auto;
+    
+    font-size: 18px;
+     
+ line-height: 30px; 
+}
+    .titolo{
+       font-size: 20px;
+      
+    }
+
+   
+.sotto-testo{
+font-size: 20px;
+       
+       margin-top: 20px;
+}
+
+}
 </style>

@@ -1,0 +1,481 @@
+<template>
+<div class="contiainer">
+    <div class="title"><h1>Catalogo 2025/2026</h1></div>
+    <div class="parent">
+      <div class="item" v-for="viaggio in viaggiFiltrati" :key="viaggio.id">
+        <div class="card">
+          <div class="foto">
+            <img :src="viaggio.img" class="img" />
+            <div class="overlay-content">
+              <div v-if="viaggio.etichetta" class="etichetta">{{ viaggio.etichetta }}</div>
+            </div>
+          </div>
+          <div class="descrizione">
+            <h3 class="titolo">{{ viaggio.titolo }}</h3>
+            <span class="sotto-titolo">Periodo: {{ viaggio.stagione.join(', ') }}</span>
+            <br>
+            <!----  <span class="tipo">Tipo: {{ viaggio.tipo.join(', ')}}</span>-->
+           
+          </div>
+          <div class="prezzo">{{ viaggio.prezzo }}€</div>
+        </div>
+      </div>
+
+     
+    </div>
+    
+
+      
+  </div>
+
+
+
+</template>
+
+
+
+
+
+
+
+<style scoped>
+
+.title{
+    width: 100%;
+    height: 80px;
+     font-family: "DM Sans", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(7, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+margin-bottom: 60px;
+
+height: auto;
+}
+
+
+.item{
+    width: 420px;
+    height: 600px;
+    
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px !important;
+
+
+    overflow: hidden;
+    
+}
+.card{
+    width: 100%;
+    height: 100%;
+   
+    border: 0.5px;
+   
+
+    overflow: hidden;
+}
+.foto{
+    width: 100%;
+    height: 300px;
+    background-color: teal;
+    overflow: hidden;
+
+
+ position: relative; /* <-- importante */
+
+}
+
+.descrizione{
+    height:228px;
+    width: 100%;
+    background-color: rgb(243, 245, 245);
+    padding: 30px 15px;
+}
+.titolo{
+    font-size: 23px;
+    margin-bottom: 15px;
+    
+    height: 90px;
+
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover;
+
+    display: block;
+
+}
+.prezzo{
+    width:100%;
+    background-color: rgb(243, 245, 245);
+    height: 70px;
+    text-align: right;
+    font-size: 35px;
+    padding-right: 20px;
+    
+
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*transform: translateX(-50%);
+  color: white;
+  text-align: center;*/
+  z-index: 2;
+ 
+   color: white;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-size: 20px;
+  width: 100%;
+}
+
+.etichetta{
+    background-color:#FF0000;
+    height: 40px;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+/*bio personalizzazione */
+.personalizzazione{
+  width: 100%;
+  background-color: red;
+}
+
+
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    width: 100%;
+      
+  }
+}
+</style>
+
+<script setup>
+import islanda from '@/assets/img/catalogo/1.jpg'
+import giappone from '@/assets/img/catalogo/giappone.jpg'
+import giapponesakura from '@/assets/img/catalogo/giapponesakura.jpg'
+import patagonia from '@/assets/img/catalogo/patagonia2.jpg'
+import edimburgo from '@/assets/img/catalogo/edimburgo.png'
+import egitto from '@/assets/img/catalogo/egitto.jpg'
+import sharm from '@/assets/img/catalogo/sharm1.jpg'
+import mauritius from '@/assets/img/catalogo/mauritius.jpg'
+import maldive from '@/assets/img/catalogo/maldive.jpg'
+import peru from '@/assets/img/catalogo/peru.jpg'
+import india from '@/assets/img/catalogo/india.jpg'
+import polinesia from '@/assets/img/catalogo/polinesiafrancese.jpg'
+import westcoast from '@/assets/img/catalogo/westcoast.jpg'
+import usa from '@/assets/img/catalogo/yellowstone.jpg'
+import scozia from '@/assets/img/catalogo/scozia.jpg'
+import norvegia from '@/assets/img/catalogo/fiordinorvegesi.jpg'
+import messico from '@/assets/img/catalogo/diadelosmuertos2.jpg'
+import nuovazelanda from '@/assets/img/catalogo/nuovazelanda.jpg'
+import bahamas from '@/assets/img/catalogo/bahamas.jpg'
+import lapponia from '@/assets/img/catalogo/lapponiafinlandese.jpg'
+import tanzania from '@/assets/img/catalogo/tanzania.jpg'
+
+
+import { computed } from 'vue'
+
+
+const props = defineProps({
+  filter: String,
+})
+
+
+const viaggi = [
+  { id: 1, 
+    titolo: "islanda del sud", 
+    stagione: ["estate"], 
+    prezzo: 1500,
+     img: islanda, 
+     etichetta: "adrenalinico",
+     tipo: ["natura","avventura", "on the road"]
+     
+     },
+
+  { id: 2,
+     titolo: "Giappone:un viaggio tra templi, sakura e metropoli",
+      stagione: ["autunno"], 
+      prezzo: 2000,
+       img: giappone,
+       etichetta: "",
+       tipo: ["cultura"]
+       
+     
+     },
+
+  { id: 3,
+     titolo: "giappone: sogno di Sakura, la magia della fioritura",
+      stagione: ["primavera"], 
+      prezzo: 2500, 
+      img: giapponesakura,
+       etichetta: "" ,
+       tipo: ["nozze", "cultura", "on the road"]
+      
+    },
+
+  { id: 4, 
+    titolo: "Patagonia selvaggia: l'avventura tra ghiacciai, montagne e fiordi",
+    stagione: ["inverno", "primavera"],
+    
+      prezzo: 1500, 
+      img: patagonia, 
+      etichetta: "adrenalinico",
+      tipo: ["natura", "avventura"]
+      
+     
+     },
+
+     {id:5 , 
+    titolo:"Mauritius",
+    stagione: ["autunno", "primavera"],
+     
+      prezzo:1800 , 
+      img: mauritius, 
+      etichetta: "",
+      tipo:["relax", "nozze"],
+     
+
+     },
+
+      {id: 6, 
+    titolo:"Egito: storia egizia e crociera sul Nilo",
+    stagione:["primavera", "autunno"],
+     
+      prezzo: 1200, 
+      img: egitto , 
+      etichetta: "",
+      tipo: ["cultura"]
+     
+
+     },
+
+      {id: 7, 
+    titolo:"Edimburgo: castelli, cultura e il battito creativo di Agosto",
+     stagione:["estate"],
+     
+      prezzo: 900, 
+      img: edimburgo, 
+      etichetta: "",
+      tipo: ["eventi", "cultura"]
+     
+
+     },
+
+     {id: 8 , 
+    titolo:"Lo spirito della Scozia: natura, kayak e wild camping tra gli Highlands",
+    stagione: ["primavera", "autunno"],
+     
+      prezzo: 1100, 
+      img: scozia, 
+      etichetta: "adrenalinico",
+      tipo: ["natura", "avventura", "on the road"]
+      
+
+     },
+
+     {id: 9, 
+    titolo:"Lapponia finlandese:Nel regno dell’aurora: un viaggio tra fiaba e ghiaccio",
+     stagione: ["inverno"],
+     
+      prezzo: 1200, 
+      img: lapponia, 
+      etichetta: "adrenalinico",
+      tipo: ["natura", "avventura"]
+     
+     
+
+     },
+
+     {id: 10, 
+    titolo:"Bahamas",
+    stagione: ["inverno", "primavera"],
+     
+      prezzo: 1400, 
+      img:bahamas , 
+      etichetta: "",
+      tipo: ["relax", "nozze"]
+      
+     
+
+     },
+
+     {id: 11, 
+    titolo:"Nuova Zelanda Adventure: emozioni forti tra geyser, lanci e trekking ",
+    stagione: ["inverno", "primavera"],
+     
+      prezzo: 1700, 
+      img: nuovazelanda, 
+      etichetta: "adrenlinico",
+      tipo: ["natura", "avventura"]
+     
+     
+
+     },
+
+
+     {id: 12, 
+    titolo:"Messico in Festa: colori, tradizioni e magia del Día de los Muertos",
+     stagione: ["autunno"],
+     
+      prezzo:1000 , 
+      img:messico , 
+      etichetta: "",
+      tipo: ["eventi", "cultura"]
+     
+     
+
+     },
+
+
+     {id: 13, 
+    titolo:"USA selvaggio: trekking, laghi cristallini e adrenalina tra i grandi parchi",
+    stagione: ["primavera", "autunno", "estate"],
+     
+      prezzo: 1280, 
+      img: usa, 
+      etichetta: "adrenalinico",
+      tipo: ["natura", "avventura", "on the road"]
+      
+
+     },
+
+     {id: 14, 
+    titolo:"West Coast Legends: da Los Angeles a San Francisco tra deserti e oceano",
+    stagione: ["estate", "autunno"],
+     
+      prezzo: 1200, 
+      img:westcoast , 
+      etichetta: "",
+      tipo: ["natura", "on the road"]
+     
+
+     },
+
+
+     {id:15 , 
+    titolo:"Tanzania selvaggia: il cuore dell’Africa tra leoni e tramonti infuocati",
+    stagione: ["estate", "inverno"],
+    
+      prezzo: 1200, 
+      img: tanzania, 
+      etichetta: "",
+      tipo: ["natura", "on the road"]
+      
+
+     },
+
+
+     {id: 16, 
+    titolo:"India:Anima e Respiro: Yoga e Meditazione tra i Templi dell’India",
+     stagione: ["primavera"],
+     
+      prezzo:1220 , 
+      img:india , 
+      etichetta: "novita!",
+      tipo: ["cultura", "eventi"]
+      
+     
+
+     },
+
+
+     {id: 17 , 
+    titolo:"Sharm El sheikh",
+    stagione: ["primavera", "autunno"],
+    
+      prezzo: 1000 , 
+      img: sharm, 
+      etichetta: "",
+      tipo: ["relax", "nozze"]
+     
+     
+
+     },
+
+
+
+  {id: 18, 
+    titolo:" Perù autentico: natura selvaggia e la magia dell’Inti Raymi",
+     stagione: ["estate"],
+     
+      prezzo:1200 , 
+      img: peru , 
+      etichetta: "novità!",
+      tipo: ["cultura", "eventi"]
+     
+     
+
+     },
+
+     {id: 19, 
+    titolo:"Maldive",
+    stagione: ["inverno", "primavera"],
+     
+      prezzo: 1100 , 
+      img: maldive, 
+      etichetta: "",
+      tipo: ["relax", "nozze"]
+     
+    
+
+     },
+
+     {id: 20  , 
+    titolo:"Fiordi norvegesi",
+    stagione: ["primavera", "estate"],
+    
+      prezzo: 1600, 
+      img: norvegia, 
+      etichetta: "",
+      tipo:[ "natura", "nozze",] 
+
+     },
+]
+
+const viaggiFiltrati = computed(() => {
+  if (!props.filter) return viaggi;
+
+  const filtro = props.filter.toLowerCase();
+
+  return viaggi.filter(v => {
+    const stagioni = Array.isArray(v.stagione) ? v.stagione : [v.stagione];
+    const tipi = Array.isArray(v.tipo) ? v.tipo : [v.tipo];
+
+    return (
+      stagioni.some(s => s.toLowerCase().includes(filtro)) ||
+      tipi.some(t => t.toLowerCase().includes(filtro))
+    );
+  });
+});
+
+</script>
