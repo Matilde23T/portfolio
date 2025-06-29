@@ -318,7 +318,7 @@ li .icons {
       </div>
 
       <div class="tipologie">
-        <h3>Seleziona la tipologia di viaggio:</h3>
+        <h3>Seleziona il tipo di viaggio:</h3>
         <ul class="tipo">
           <li @click="$emit('filter-selected', 'natura')">
             <img :src="iconaNatura" class="icons"> Natura
@@ -360,7 +360,7 @@ li .icons {
 
 <style scoped>
 .catalogo-sidebar {
-  height: 115vh;
+  height: 80vh;
   width: 350px;
   z-index: 999;
   display: flex;
@@ -507,6 +507,210 @@ li .icons {
     cursor: pointer;
 }
 
+@media (max-width:768px){
+
+  .menu-button{
+   
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 40px;
+    font-size: 18px;
+
+  }
+  .catalogo-sidebar {
+  
+  width: 200px;
+  padding: 15px;
+  z-index: 99;
+  position: absolute; /* o relative, fixed, sticky */
+  z-index: 10; 
+ 
+}
+
+
+.catalogo-sidebar .tipologie{
+  margin-top: 10px;
+  padding-right: 10px;
+  width: 200px;
+  
+  
+}
+/*titoli */
+.tipologie h3{
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.periodo h3{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/*elenco tipi */
+.tipologie .tipo{
+   
+     margin-top: 30px;
+    
+     
+}
+
+.tipo .icons{
+    width: 20px;
+    height: 20px;
+    
+    
+
+}
+
+.tipo li{
+  
+    margin-top: 20px;
+    font-weight: 500;
+    
+}
+li {
+ 
+  font-size: 16px;
+  
+}
+
+li:hover{
+    font-weight: 600;
+    }
+
+
+
+.periodo{
+   
+    
+    margin-top: 40px;
+    
+     
+}
+
+
+
+.periodo .stagioni{
+    list-style: none;
+     margin-top: 20px;
+    
+     
+}
+
+.periodo .stagioni li{
+    
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+}
+
+
+
+@media (min-width: 800px) and (max-width:1280px){
+   .menu-button{
+   
+    width: 120px;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 40px;
+    font-size: 18px;
+    margin-top:15px;
+
+  }
+  .catalogo-sidebar {
+  
+  width: 20%;
+  padding: 10px;
+  z-index: 99;
+  position: absolute; /* o relative, fixed, sticky */
+  z-index: 10; 
+  height: auto;
+ 
+}
+
+
+.catalogo-sidebar .tipologie{
+  margin-top: 10px;
+  padding-right: 10px;
+  width: 200px;
+  
+  
+}
+/*titoli */
+.tipologie h3{
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.periodo h3{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/*elenco tipi */
+.tipologie .tipo{
+   
+     margin-top: 30px;
+    
+     
+}
+
+.tipo .icons{
+    width: 20px;
+    height: 20px;
+    
+    margin-right: 10px;
+    
+
+}
+
+.tipo li{
+  
+    margin-top: 20px;
+    font-weight: 500;
+    
+}
+li {
+ 
+  font-size: 16px;
+  
+}
+
+li:hover{
+    font-weight: 600;
+    }
+
+
+
+.periodo{
+   
+    
+    margin-top: 40px;
+    
+     
+}
+
+
+
+.periodo .stagioni{
+    list-style: none;
+     margin-top: 20px;
+    
+     
+}
+
+.periodo .stagioni li{
+    
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+}
 </style>
 
 

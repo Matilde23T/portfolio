@@ -136,4 +136,50 @@ font-size: 28px;
     font-weight: 700;
     margin-bottom: 40px;
 }
+
+
+@media (max-width: 768px){
+  .faq {
+ 
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+  .faq h2{
+    font-size: 30px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.pannello-totale .title2{
+margin-top: 40px;
+font-size: 20px;
+    
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 800px) and (max-width:1280px){
+   .faq {
+ 
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+  .faq h2{
+    font-size: 35px;
+    
+}
+.pannello-totale .title2{
+margin-top: 40px;
+font-size: 25px;
+    
+    font-weight: 600;
+    
+}
+
+}
+
 </style>

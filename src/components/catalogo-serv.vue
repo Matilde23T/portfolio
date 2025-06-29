@@ -40,6 +40,14 @@
 
 <style scoped>
 
+
+
+.contiainer{
+   
+   height: auto;
+  
+
+}
 .title{
     width: 100%;
     height: 80px;
@@ -47,40 +55,61 @@
     text-align: center;
     font-size: 25px;
     margin-top: 30px;
+   
 }
 
 
 .parent {
-display: grid;
+/*display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(7, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 
 margin-bottom: 60px;
+background-color: aqua;
+height: auto;*/
 
-height: auto;
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-gap: 20px; /* per spazio tra righe/colonne */
+ 
+  
+  height: auto; /* opzionale, va bene anche rimuoverlo */
+
+width: 100%;
+ padding: 20px;
+
+
+
+
+ gap: 20px;
 }
 
 
 .item{
-    width: 420px;
+    width: 80%;
     height: 600px;
     
-    margin: 20px;
+    
     display: flex;
     justify-content: center;
     font-family: "DM Sans", sans-serif;
     border-radius: 20px !important;
 
-
+margin: 60px;
     overflow: hidden;
     
+
+/*ultime mdo */
+/*
+    width: 100%;
+  max-width: 420px;*/
 }
 .card{
     width: 100%;
     height: 100%;
-   
+    
     border: 0.5px;
    
 
@@ -89,7 +118,7 @@ height: auto;
 .foto{
     width: 100%;
     height: 300px;
-    background-color: teal;
+    
     overflow: hidden;
 
 
@@ -162,21 +191,119 @@ height: auto;
 
 
 
-/*bio personalizzazione */
-.personalizzazione{
-  width: 100%;
-  background-color: red;
-}
 
 
 @media (max-width: 768px) {
+
+  .contiainer{
+    width: 100%;
+  }
   .parent {
-    grid-template-columns: 1fr;
+    
     flex-wrap: wrap;
     width: 100%;
       
+      margin: 0px;
+      padding: 0px;
+    grid-template-columns: repeat(1, 1fr);
   }
+
+.title{
+    width:100%;
+    height: 50px;
+    
+    
+    font-size: 18px;
+    margin-top: 20px;
+    
 }
+.item{
+    width: 90%;
+    height: 600px;
+    margin: 15px;
+    
+    overflow: hidden;
+    
+}
+
+}
+
+
+
+@media (width:768px){
+  .parent{
+    flex-wrap: wrap;
+    width: 100%;
+      gap: 0px;
+      margin: 0px;
+      padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+.item{
+    width: 90%;
+    height: 600px;
+   /* margin: 25px;*/
+    
+   margin: 18px;
+    
+}
+}
+
+
+@media (min-width: 800px) and (max-width:1280px){
+  .parent{
+    
+    flex-wrap: wrap;
+    width: 100%;
+      gap: 0px;
+      margin: 0px;
+      padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title{
+    width:100%;
+    height: 70px;
+    
+    margin: 0;
+    font-size: 23px;
+    
+    
+}
+.item{
+    width: 90%;
+    height: 600px;
+   /* margin: 25px;*/
+    
+   margin: 18px;
+    
+}
+.card{
+    width: 100%;
+    height: 100%;
+    
+    border: 0.5px;
+   
+
+    overflow: hidden;
+}
+
+.foto{
+   
+    height: 300px;
+   
+
+}
+
+.titolo{
+    font-size: 20px;
+   
+
+}
+
+}
+
+
 </style>
 
 <script setup>

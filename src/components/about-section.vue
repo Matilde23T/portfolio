@@ -42,31 +42,7 @@ Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più cons
     </div>
 
     <!---------------------------------PERCHE NOI-SECTION---------------------------->
-<section class="prova-grid">
 
-<div class="parent">
-    <div class="item">
-        <img :src="globoimg" class="icons">
-        <h3>Esperienza sul campo</h3>
-        <p>Abbiamo vissuto ogni destinazione in prima persona: consigli autentici, itinerari testati.</p>
-    </div>
- <div class="item">
-    <img :src="metaimg" class="icons">
-    <h3> Viaggi su misura</h3>
-        <p>Ogni viaggio è costruito attorno a te, con attenzione ai tuoi desideri e al tuo ritmo.</p>
-</div>
-  <div class="item">
-     <img :src="assimg" class="icons">
-     <h3>Assistenza continua</h3>
-        <p>Ti seguiamo prima, durante e dopo la partenza. Non sarai mai solo, neanche dall’altra parte del mondo.</p>
-</div>
-   <div class="item">
-     <img :src="viaggioimg" class="icons">
-     <h3>Passione vera per il viaggio</h3>
-        <p>Siamo viaggiatori prima ancora che consulenti: mettiamo cuore e curiosità in ogni proposta.</p>
-</div>
-</div>
-</section>
 
 
 <!---------------------------------CAROUSEL METE-------------------------------->
@@ -117,12 +93,6 @@ Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più cons
 
 <script setup>
 
-import Teamimg from '@/assets/img/team.jpg'
-
-import viaggioimg from '@/assets/img/viaggio.png'
-import globoimg from '@/assets/img/globo.png'
-import metaimg from '@/assets/img/meta.png'
-import assimg from '@/assets/img/assistenza.png'
 
 
 

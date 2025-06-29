@@ -25,69 +25,123 @@
 <style scoped>
 
 .contenitore{
- /*
-display: flex;
-height: 100vh;
-  overflow: hidden;
-
-  align-items: flex-start;
- */
-
-
-
+width: 100%;
 display: flex;
   /* altezza totale della viewport meno eventuale header (vedi sotto) */
-  height: 120vh;
+  
+
+background-color: yellow;
+
+/*modifhce */
+
+ flex-direction: row;
+  width: 100%;
+  height: 100vh;
+ 
+  overflow: hidden;
+
 
 
 
 }
 .catalogo-scrollabile{
+
+  /*
  width: 100%;
   display: flex;
   justify-content: center;
   
   height: 100%;
-
-  margin-left: 0px; /* spazio per sidebar */
+background-color: cornflowerblue;
+  margin-left: 0px; 
   flex: 1;
   overflow-y: auto;
   height: auto;
   margin-bottom: 50px;
-  
+  */
+
+flex: 1;
+  overflow-y: auto;
+
+
+height: auto;
+
 }
 
 .sidebar-container {
-  /*
- width: 300px;
-  flex-shrink: 0;
-  position: fixed; 
-  height: 100vh;
-  overflow-y: auto;
-  background-color: rgb(219, 51, 51); 
-  border: 2px solid black;
-  z-index: 10;
-*/
 
+/*
  width: 350px;
   
   top: 80px; 
   align-self: flex-start; 
   height: calc(100vh - 80px); 
-  /*overflow-y: auto; */
-  
- 
+*/
 
-  /*position:sticky */
+
+width: 350px;
+  flex-shrink: 0;
+
+
   
 }
 
+
+/*
 @media (max-width:768px){
   .sidebar-container{
-    width: 0px;
+   
+   width: 100px;
+  
+  }
+
+  .catalogo-scrollabile{
+    background-color: aqua;
+     width: 100%;
+ 
+  
+  }
+
+  .contenitore{
+    background-color: green;
+  }
+}
+
+*/
+
+@media (max-width:768px){
+  .sidebar-container{
+    width: 100%; /* prende tutta la larghezza in verticale */
+    order: 1;     /* se vuoi che vada sopra */
+  }
+
+  .catalogo-scrollabile{
+    width: 100%;
+    order: 2;
+  }
+
+  .contenitore {
+    flex-direction: column; /* da row a column */
+    height: auto;           /* per adattarsi al contenuto */
   }
 }
 
 
+
+
+
+@media (min-width: 800px) and (max-width:1280px){
+  .sidebar-container{
+    width: 20%;
+    
+  }
+.catalogo-scrollabile{
+ 
+  padding: 0px;
+  margin: 0;
+  width: 80%;
+}
+  
+}
 
 </style>

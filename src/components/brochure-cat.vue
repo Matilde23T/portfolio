@@ -31,6 +31,7 @@ function showAlert(){
     align-items: center;
    margin-bottom: 50px;
     
+    margin-top: 50px;
 }
 
 .btn-brochure{
@@ -52,6 +53,32 @@ background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,
 
 #icona-dw{
   padding-left: 10px;
+}
+
+@media (max-width: 768px){
+ 
+
+ 
+
+.btn-brochure{
+
+ 
+         
+         
+    width: 320px;
+    
+    font-size: 18px;
+    
+     font-weight: 600;
+     padding: 15px 10px;
+     
+     
+
+}
+
+#icona-dw{
+  padding-left: 10px;
+}
 }
 
 
