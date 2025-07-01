@@ -165,7 +165,7 @@ height: 500px;
     background-color: aqua;
 }
 .viaggiBtn a{
-    font-size: 23px;
+    font-size: 25px;
     text-decoration: none;
     color: black;
     font-family: "DM Sans", sans-serif;

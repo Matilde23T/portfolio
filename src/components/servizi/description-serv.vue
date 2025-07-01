@@ -23,12 +23,54 @@ Con Wayfind Travel, non parti solo. Parti ispirato.</p>
 <style scoped>
 .descrizionebox{
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: orange;
-    
+    background-color:  #FF5E78;
+    background-color: #FFD54F;
+    background-color: #B7410E ;
+    background-color:   #C8A2C8 ;
+    background-color:#ffc93c ;
+    background-color: #ff6f3c;
+    background-color: #8dc6ff;
+    background-color:#00bbf0 ;
+    background-color:#6FE6FC ;
+   background-color: #60B5FF;
+   background-color:#FFE15D;
+   background-color: #fff08e;
+   background-color:#ff8494 ;
+   background-color: rgba(12, 192, 223, 1);;
+   background-color:#ffc93c ;
+   background-color: #F0F8FF ;
+   background-color: #ffe79a;
+   background-color:#fcf4d9 ;
+   background-color: #ffebeb;
+   /**chatgpt */
+   background-color: #EEAF61 ;
+   background-color: #FB9062;
+   background-color:#EE5D6C ;
+   background-color: #CE4993;
+   background-color: #BC5090;
+   background-color:#FF6361  ;
+   background-color: #FFA600;
+   background-color: #FB9062;
+   background-color:#EEAF61 ;
+    /**prove */
+background-color: #FB9062;
+ background-color:#00B5E2;
+ background-color: 	#F7AFA0 ;
+ background-color:	#FFD6B5 ;
+ background-color: #FB9062;
+ background-color: #3f8efc;
+ background-color: #ffaa00;
+ background-color:#ff9100 ;
+	
+
+
+
  display: flex;
  justify-content: center;
  margin-bottom: 30px;
+
     }
 .box-testo{
     
@@ -61,8 +103,8 @@ font-size: 23px;
 @media (max-width:768px){
     .descrizionebox{
     width: 100%;
-    height: 620px;
-    background-color: rgb(6, 182, 64);
+    height: auto;
+    
     
  margin-bottom: 30px;
 
@@ -73,8 +115,8 @@ font-size: 23px;
     width: 80%;
     height: auto;
     
-    font-size: 18px;
-     
+    font-size: 16px;
+     text-align: left;
  line-height: 30px; 
 }
     .titolo{
@@ -86,8 +128,10 @@ font-size: 23px;
 .sotto-testo{
 font-size: 20px;
        
-       margin-top: 20px;
+    
 }
 
 }
+
+
 </style>

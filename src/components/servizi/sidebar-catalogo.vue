@@ -369,12 +369,16 @@ li .icons {
   justify-content: flex-start;
   /*background-image: linear-gradient( 111.4deg,  rgba(37,84,199,1) 0.1%, rgba(47,111,173,1) 24.4%, rgba(100,166,227,1) 52.2%, rgba(135,206,235,1) 77.9%, rgba(125,249,255,1) 100% );*/
   /*background-color:#90e0ef ;*/
-  background-color: #42a5f5;
+  background-color: #77bef8;
   color: #233142;
   padding: 20px;
   overflow-y: auto;
    font-family: "DM Sans", sans-serif;
- 
+ border-top-right-radius: 20px;
+ border-bottom-right-radius: 20px;
+background-color:#ffebeb;
+background-color: #fffafa;
+background-color: #ffe8d6;
 }
 .catalogo-sidebar .tipologie{
   margin-top: 20px;
@@ -490,6 +494,7 @@ li .icons {
   border-radius: 20px;
   margin-left: 30px;
   font-size: 20px;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% );
 }
 
 .close-button {

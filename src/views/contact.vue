@@ -3,7 +3,7 @@ import intro from '@/components/contatti/intro.vue';
 import formContact from '@/components/contatti/form-contact.vue';
 import footerSec from '@/components/footer-sec.vue';
 import navbar2 from '@/components/navbar-2.vue';
-import introAbout from '@/components/about/about-intro.vue';
+
 
 
 
@@ -21,6 +21,5 @@ import introAbout from '@/components/about/about-intro.vue';
    
 
 
-<intro-about></intro-about>
 
 </template>

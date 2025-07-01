@@ -30,7 +30,6 @@ display: flex;
   /* altezza totale della viewport meno eventuale header (vedi sotto) */
   
 
-background-color: yellow;
 
 /*modifhce */
 

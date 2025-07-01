@@ -16,10 +16,10 @@ import img4 from '@/assets/img/perchenoi/viaggio.png'
 
 <template>
     <div class="sub-title">
-        <div class="border-effect">
-        <h1>Chi siamo</h1>
+       
+        <h1>Perche scegliere noi?</h1>
         </div>
-    </div>  <!---------------------------------PERCHE NOI-SECTION---------------------------->
+     <!---------------------------------PERCHE NOI-SECTION---------------------------->
 <section class="prova-grid">
 
 <div class="parent">
@@ -52,25 +52,17 @@ import img4 from '@/assets/img/perchenoi/viaggio.png'
 /*sezione perche noi*/
 .sub-title{
     
-    display: flex;
-    justify-content: center;
+   text-align: center;
     font-family: "DM Serif Text", serif;
+    font-size: 20px;
     
     
     
 }
-.border-effect{
-    text-align: center;
-    width: 400px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-   
-}
+
 .prova-grid{
     width: 100%;
-    background-color: rgb(238, 237, 237);
+    
     height: auto;
     display: flex;
     justify-content: center;

@@ -11,6 +11,8 @@ import perchenoi from '@/components/about/perchenoi.vue';
 import staff from '@/components/about/staff.vue';
 import carouselDest from '@/components/about/carousel-dest.vue';
 import recensioni from '@/components/about/recensioni.vue';
+import marchi from '@/components/about/marchi.vue';
+import footerSec from '@/components/footer-sec.vue';
 
 </script>
 
@@ -24,14 +26,25 @@ import recensioni from '@/components/about/recensioni.vue';
         </template>
     </aboutIntro>
 
+    <!--presentazione foto + testo-->
     <presentazione></presentazione>
 
+    <!---icone e testo-->
     <perchenoi></perchenoi>
 
+    <!---coordinatori-->
     <staff></staff>
 
+    <!---carousel destinazioni-->
     <carouselDest></carouselDest>
 
+    <!---recensioni clienti-->
     <recensioni></recensioni>
+
+    <!---marchi di riferimento-->
+    <marchi></marchi>
+
+    <!--footer-->
+    <footerSec></footerSec>
 </template>
 

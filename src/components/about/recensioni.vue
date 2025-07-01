@@ -98,15 +98,14 @@ import peoplerew3 from '@/assets/img/about-rec/foto3.jpg'
     display: flex;
     justify-content: center;
     font-family: "DM Serif Text", serif;
-    
+    font-size: 25px;
     
     
 }
 .border-effect{
     text-align: center;
     width: 400px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+   
     padding-top: 20px;
     padding-bottom: 20px;
    
@@ -226,7 +225,13 @@ font-size: 16px;
     height: auto;
     display: flex;
     justify-content: center;
- background-color: rgb(238, 237, 237);
+ background-color:#ecfeff;
+ background-color:#89CFF0 ;
+ background-color:#caf0f8 ;
+ background-color: #bbdefb;
+ background-color:#c7eeff ;
+ background-color:#AFDBF5 ;
+ background-color:#F0F8FF ;
  margin-bottom: 30px;
 }
 

@@ -36,7 +36,9 @@ function showAlert(){
 
 .btn-brochure{
 background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% );
- 
+background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+background-image: linear-gradient( 86.9deg,  rgba(253,189,38,1) 28.3%, rgba(253,109,38,1) 118.2% );
+background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
          
          
     width: 700px;

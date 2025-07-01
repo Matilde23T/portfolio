@@ -1,17 +1,14 @@
 <script setup>
-import img1 from '@/assets/img/about-intro/1.jpg'
-import img2 from '@/assets/img/about-intro/2.jpg'
-import img3 from '@/assets/img/about-intro/3.jpg'
-//ok
-import img5 from '@/assets/img/about-intro/5.jpg'
-import img6 from '@/assets/img/about-intro/6.png'
-import img7 from '@/assets/img/about-intro/7.jpg'
-import img7cut from '@/assets/img/about-intro/7-cut.jpg'
 
+import imgIntro3 from  '@/assets/img/viaggi-intro/intro3.jpg'
+import imgIntro4 from  '@/assets/img/viaggi-intro/intro4.jpg'
+import imgIntro5 from  '@/assets/img/viaggi-intro/intro5.jpg'
+import imgIntro5cut from '@/assets/img/viaggi-intro/intro5-cut.jpg'
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+
 // Percorsi immagine (usa `@/assets/...` o `new URL(..., import.meta.url)` se necessario)
-const imgIntroLarge = new URL('@/assets/img/about-intro/7.jpg', import.meta.url).href
-const imgIntroMobile = new URL('@/assets/img/about-intro/7-cut.jpg', import.meta.url).href
+const imgIntroLarge = new URL('@/assets/img/viaggi-intro/intro10.jpg', import.meta.url).href
+const imgIntroMobile = new URL('@/assets/img/viaggi-intro/intro13.jpg', import.meta.url).href
 
 const windowWidth = ref(window.innerWidth)
 
@@ -33,35 +30,59 @@ onBeforeUnmount(() => {
 
 </script>
 
-
-
-
 <template>
-    <div class="intro">
-        <img :src="responsiveImage" class="img">
+<div class="image-container">
+    <img :src=" responsiveImage " class="img">
 
-         <div class="overlay-content">
+    <div class="overlay-content">
         
         <slot name="navbar"></slot>
         <slot name="testo-intro"></slot>
     </div>
-    </div>
+</div>
 </template>
 
 
-
 <style scoped>
-.intro{
+.image-container{
+   
     width: 100%;
-    
-    height: auto;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    background-color:  #FB9062;
 }
 
 .img{
     width: 100%;
+    height: auto;
     height: 700px;
-     filter: brightness(0.7);
+     filter: brightness(0.8);
+     margin: 0;
 }
+
+.overlay-content{
+     position: absolute;
+  top: 0;
+  left: 0;
+  /*transform: translateX(-50%);
+  color: white;
+  text-align: center;*/
+  z-index: 10;
+  
+  width: 100%;
+}
+
+@media (max-width:768px){
+.img{
+    width: 100%;
+      height: 100%;
+     filter: brightness(0.7);
+      display: block;
+   max-height: 400px;
+}
+
+
 
 
 .overlay-content{
@@ -72,44 +93,9 @@ onBeforeUnmount(() => {
   color: white;
   text-align: center;*/
   z-index: 10;
-
-  height:auto;
+  
   width: 100%;
-  align-content: center;
 }
-
-
-@media (max-width: 768px){
-    .intro{
-    width: 100%;
-    
-    height: auto;
-}
-
-.img{
-    width: 100%;
-    height: 100%;
-     filter: brightness(0.7);
-     max-height: 400px;
-}
-
-
-.overlay-content{
-     position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: 10;
- 
-  height: auto;
-  width: 100%;
-  align-content: center;
-  margin-top: 0px;
-}
-
-}
-
-@media (min-width: 800px) and (max-width:1280px){
 
 }
 </style>

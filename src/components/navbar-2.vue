@@ -15,7 +15,7 @@
       <li><RouterLink to="/about">About</RouterLink></li>
       <li><RouterLink to="/services">Viaggi</RouterLink></li>
       <li><RouterLink to="/contact">Contatti</RouterLink></li>
-       <li><RouterLink to="/prova">sostituzione</RouterLink></li>
+     
     </ul>
 
     <button 
@@ -60,6 +60,12 @@ text-align: center;
 
   padding-top: 20px;
   background-color: red;
+  background: rgba(12, 192, 223, 1);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+
 }
 
 .sidebar li {
@@ -101,7 +107,7 @@ text-align: center;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: lightcoral;
+  background-color: #0cc0df;
   
 }
 

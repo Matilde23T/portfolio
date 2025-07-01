@@ -1,29 +1,31 @@
 <template>
     <section class="presentazione">
     <div class="sub-title">
-        <div class="border-effect">
-        <h1>Chi siamo</h1>
+        
+        <h1>Wayfinder Travel</h1>
         </div>
-    </div>
+   
  <div class="section-row">
-    <div class="div-img">
-        <img :src="team" class="image">
-    </div>
-    <div class="div-description">
+   
+    
         <div class="description">
         <p>
-Siamo un gruppo di amici, esploratori e sognatori che hanno trasformato la passione per il viaggio in un progetto di vita.
+Wayfinderè nasce come un gruppo di amici, viaggiatori e sognatori che hanno trasformato la loro passione per l'esplorazione in un progetto di vita.
 <br>
+Dopo aver condiviso cime, sentieri e tramonti in ogni angolo del mondo, abbiamo deciso di fondare un’<span class="strong">agenzia di viaggi che mette al centro l’autenticità delle esperienze, le connessioni umane e la bellezza dell’avventura.</span>
 <br>
- Dopo aver condiviso cime, sentieri e tramonti in ogni angolo del mondo, abbiamo deciso di fondare un’agenzia che mette al centro le esperienze autentiche, le connessioni umane e la bellezza dell’avventura.
+Con Wayfinderè puoi <span class="strong">scegliere tra itinerari già curati</span> dai nostri coordinatori oppure <span class="strong">richiedere un viaggio completamente personalizzato</span>, costruito su misura per te.
 <br>
-<br>
-Con noi non prenoti solo una destinazione: scegli un modo di viaggiare più consapevole, emozionante e vero. Dalle vette dell’Himalaya alle spiagge più remote, siamo qui per costruire insieme il tuo prossimo ricordo indimenticabile.
+
+Con noi non prenoti semplicemente una destinazione: scegli un modo di viaggiare più consapevole, emozionante e autentico.
+<span class="strong">Siamo qui per creare insieme il tuo prossimo ricordo indimenticabile.</span>
+
+
 
         </p>
         </div>
     </div>
- </div>
+
  </section>
 </template>
 
@@ -41,99 +43,90 @@ import team from '@/assets/img/team.jpg'
 }
 .sub-title{
     
-    display: flex;
-    justify-content: center;
-    font-family: "DM Serif Text", serif;
-    
-    
-    
-}
-.border-effect{
     text-align: center;
-    width: 400px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-   
+    width: 100%;
+    font-family: "DM Serif Text", serif;
+    font-size: 30px;
+    
+    
 }
+
 /*sezione chi siamo  */
 .section-row{
     width: 100%;
    
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px 20px;
     height: auto;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.div-img{
-    
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    
-    height: 500px;
-  
-}
-.image{
-    width: 700px;
-    height: 500px;
+    margin-bottom: 40px;
    
- 
+   justify-content: center;
 }
 
-.div-description{
-    width: 50%;
-     font-family: "DM Sans", sans-serif;
-     font-size: 25px;
-     display: flex;
-     justify-content: center;
-     align-content: center;
-     height: 500px;
-    
 
-}
+
+
 
 .description{
-    height: auto;
+   
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+    line-height: 40px;
+   font-size: 22px;
     width: 80%;
-  
-    padding-left: 20px;
-    padding-right: 20px;
-    border-left: 1px solid black;
-     border-right: 1px solid black;
-    display: flex;
-    align-items: center;
+    
+    
+}
+
+.strong{
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
-    .section-row {
-        flex-direction: column;
-         /* imposta disposizione verticale su mobile */
-    }
-    .div-img,
-    .div-description {
-        width: 100%; 
-        height: auto; 
-    }
+    .presentazione{
+    margin-top: 30px;
+}
+.sub-title{
+    
+   
+    font-size: 25px;
+    
+    
+}
 
-    .image {
-        width: 90%; 
-        height: auto;
-    }
+/*sezione chi siamo  */
+.section-row{
+   
+ 
+   
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+   
+    margin-bottom: 40px;
+   
+   justify-content: center;
+}
 
-    .description {
-        font-size: 18px;
-      
-        margin-top: 20px; 
-        width: 90%;
-       
+
+
+
+
+.description{
+   
+  
+  text-align: left;
+  
+   font-size: 18px;
+    width: 100%;
+    
+    
+}
          
-    }
+    
 }
 @media (min-width: 800px) and (max-width:1280px){
 .image{

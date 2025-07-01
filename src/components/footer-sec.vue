@@ -88,6 +88,13 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
     width:100%;
     padding-top: 30px;
     background-color: #e4f1fe;
+    background-color:#d3d6db ;
+    background-color: #fab57a;
+    background-color:#eaf6f6 ;
+    background-color:#e3e3e3 ;
+    background-color:#f7b7b7 ;
+    background-color: #414a50;
+    background-color: #eeeeee;
 
 }
 
@@ -145,6 +152,7 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
 
 .col2 a{
     text-decoration: none;
+    color: black;
    
 }
 
@@ -155,7 +163,7 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
 .col3{
     height: auto;
     width: 300px;
- 
+    
    
 }
 
@@ -164,9 +172,18 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
 }
 .col3 ul{
     list-style-type: none;
+    margin-top: 15px;
+   
     display: flex;
+    justify-content: center;
     gap: 20px;
+    cursor: pointer;
+    
      
+}
+
+.col3 ul li:hover{
+    font-weight: 600;
 }
 
 .info{

@@ -98,14 +98,25 @@ import img8 from '@/assets/img/staff/8.png'
 .titolo{
     width: 100%;
     
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
-    font-family: "DM Sans", sans-serif;
+    
+    font-family: "DM Serif Text", serif;
+    margin-bottom: 30px;
 }
 .staff{
     width: 100%;
-  background-color: rgb(238, 237, 237);
+  background-color:#cef2f8;
+  background-color:#c7eeff ;
+  background-color: #AFDBF5;
+  background-color: #1E90FF;
+  background-color: #ff6e40;
+  background-color:#1a2636 ;
+  background-color: #9fb4c7;
+  background-color: #c8b7d6;
+  background-color:#4b1e2c ;
+  background-color:#F0F8FF ;
   min-height: 100vh;
   padding: 40px;
   display: flex;
@@ -159,5 +170,96 @@ background-color: #fff;
     width: 190px;
     
     
+}
+
+@media (max-width: 768px){
+  .staff{
+    width: 100%;
+  
+ 
+  padding: 20px;
+  
+    
+  
+}
+  .parent {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-column-gap: 10px;
+grid-row-gap: 20px;
+}
+
+.item{
+  width: 100%;
+  padding: 30px;
+}
+
+
+.item .nome{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.item .sub-title{
+    font-size: 16px;
+
+}
+
+.image{
+    width: 160px;
+    
+    
+}
+
+
+
+
+
+}
+
+@media (min-width:800px) and (max-width:1280px){
+  .staff{
+    width: 100%;
+  padding: 20px;
+  
+    
+  
+}
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    width: 100%;
+    grid-column-gap: 20px;
+grid-row-gap: 20px;
+}
+
+.item{
+  width: 100%;
+  padding: 30px;
+}
+
+
+.item .nome{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.item .sub-title{
+    font-size: 19px;
+
+}
+
+.image{
+    width: 190px;
+    
+    
+}
+
+
 }
 </style>

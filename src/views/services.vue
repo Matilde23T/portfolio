@@ -46,27 +46,27 @@
 <script setup>
 import servicesSection from '@/components/services-section.vue';
 import navbar2 from '@/components/navbar-2.vue';
-import introServ from '@/components/intro-serv.vue';
-import inroTestoServ from '@/components/inro-testo-serv.vue';
+import introServ from '@/components/servizi/intro-serv.vue';
+import inroTestoServ from '@/components/servizi/inro-testo-serv.vue';
 
-import descriptionServ from '@/components/description-serv.vue';
+import descriptionServ from '@/components/servizi/description-serv.vue';
 
-import mainCatalogo from '@/components/main-catalogo.vue';
-import sidebarCatalogo from '@/components/sidebar-catalogo.vue';
+import mainCatalogo from '@/components/servizi/main-catalogo.vue';
+import sidebarCatalogo from '@/components/servizi/sidebar-catalogo.vue';
 
-import catalogoServ from '@/components/catalogo-serv.vue';
+import catalogoServ from '@/components/servizi/catalogo-serv.vue';
 
-import personalizzazioneCat from '@/components/personalizzazione-cat.vue';
+import personalizzazioneCat from '@/components/servizi/personalizzazione-cat.vue';
 
 
-import faqViaggi from '@/components/faq-viaggi.vue';
+import faqViaggi from '@/components/servizi/faq-viaggi.vue';
 
-import galleriaViaggi from '@/components/galleria-viaggi.vue';
+import galleriaViaggi from '@/components/servizi/galleria-viaggi.vue';
 
 import footerSec from '@/components/footer-sec.vue';
 
 
-import brochureCat from '@/components/brochure-cat.vue';
+import brochureCat from '@/components/servizi/brochure-cat.vue';
 
 import { ref } from 'vue'
 

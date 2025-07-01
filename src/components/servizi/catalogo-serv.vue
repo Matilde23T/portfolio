@@ -1,6 +1,6 @@
 <template>
 <div class="contiainer">
-    <div class="title"><h1>Catalogo 2025/2026</h1></div>
+   <div class="title"><h1>Catalogo 2025/2026</h1></div>
     <div class="parent">
       <div class="item" v-for="viaggio in viaggiFiltrati" :key="viaggio.id">
         <div class="card">
@@ -46,6 +46,8 @@
    
    height: auto;
   
+   
+  
 
 }
 .title{
@@ -54,7 +56,7 @@
      font-family: "DM Sans", sans-serif;
     text-align: center;
     font-size: 25px;
-    margin-top: 30px;
+   
    
 }
 
@@ -72,32 +74,31 @@ height: auto;*/
 
 display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*grid-gap: 20px; /* per spazio tra righe/colonne */
- 
   
-  height: auto; /* opzionale, va bene anche rimuoverlo */
-
-width: 100%;
- padding: 20px;
-
-
+ grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  padding: 70px;
+  width: 100%;
 
 
- gap: 20px;
+
+
+/* gap: 20px;*/
 }
 
 
 .item{
-    width: 80%;
-    height: 600px;
     
+    width: 100%;
+  display: flex;
+  justify-content: center;
     
     display: flex;
     justify-content: center;
     font-family: "DM Sans", sans-serif;
     border-radius: 20px !important;
 
-margin: 60px;
+/*margin: 60px;*/
     overflow: hidden;
     
 
@@ -107,9 +108,9 @@ margin: 60px;
   max-width: 420px;*/
 }
 .card{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    
+    border-radius: 20px;
     border: 0.5px;
    
 
@@ -174,7 +175,7 @@ margin: 60px;
     display: flex;
     align-items: center;
     justify-content:flex-end;
-    font-size: 20px;
+   
   width: 100%;
 }
 
@@ -183,7 +184,7 @@ margin: 60px;
     height: 40px;
     padding: 10px;
     color: #fff;
-    
+     font-size: 20px;
 }
 
 
@@ -202,10 +203,11 @@ margin: 60px;
     
     flex-wrap: wrap;
     width: 100%;
-      
+     
       margin: 0px;
       padding: 0px;
     grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 30px;
   }
 
 .title{
@@ -218,20 +220,29 @@ margin: 60px;
     
 }
 .item{
-    width: 90%;
+    width: 100%;
     height: 600px;
-    margin: 15px;
+    
     
     overflow: hidden;
     
 }
-
+.titolo{
+  font-size: 20px;
+}
+.prezzo{
+  font-size: 29px;
+}
+.etichetta{
+  font-size: 18px;
+}
 }
 
 
-
-@media (width:768px){
+@media only screen and (width: 768px) and (orientation: portrait) {
+  /* Regole solo per iPad Mini verticale */
   .parent{
+    
     flex-wrap: wrap;
     width: 100%;
       gap: 0px;
@@ -239,7 +250,7 @@ margin: 60px;
       padding: 10px;
     grid-template-columns: repeat(2, 1fr);
   }
-.item{
+  .item{
     width: 90%;
     height: 600px;
    /* margin: 25px;*/
@@ -247,7 +258,17 @@ margin: 60px;
    margin: 18px;
     
 }
+.card{
+    width: 100%;
+    height: 100%;
+    
+    border: 0.5px;
+   
+
+    overflow: hidden;
 }
+}
+
 
 
 @media (min-width: 800px) and (max-width:1280px){
@@ -266,7 +287,7 @@ margin: 60px;
     height: 70px;
     
     margin: 0;
-    font-size: 23px;
+    font-size: 20px;
     
     
 }
@@ -340,7 +361,7 @@ const props = defineProps({
 
 const viaggi = [
   { id: 1, 
-    titolo: "islanda del sud", 
+    titolo: "Islanda del sud", 
     stagione: ["estate"], 
     prezzo: 1500,
      img: islanda, 
@@ -361,7 +382,7 @@ const viaggi = [
      },
 
   { id: 3,
-     titolo: "giappone: sogno di Sakura, la magia della fioritura",
+     titolo: "Giappone: sogno di Sakura, la magia della fioritura",
       stagione: ["primavera"], 
       prezzo: 2500, 
       img: giapponesakura,
@@ -395,7 +416,7 @@ const viaggi = [
      },
 
       {id: 6, 
-    titolo:"Egito: storia egizia e crociera sul Nilo",
+    titolo:"Egitto: storia egizia e crociera sul Nilo",
     stagione:["primavera", "autunno"],
      
       prezzo: 1200, 
@@ -431,7 +452,7 @@ const viaggi = [
      },
 
      {id: 9, 
-    titolo:"Lapponia finlandese:Nel regno dell’aurora: un viaggio tra fiaba e ghiaccio",
+    titolo:"Lapponia finlandese: nel regno dell’aurora, un viaggio tra fiaba e ghiaccio",
      stagione: ["inverno"],
      
       prezzo: 1200, 
@@ -523,7 +544,7 @@ const viaggi = [
 
 
      {id: 16, 
-    titolo:"India:Anima e Respiro: Yoga e Meditazione tra i Templi dell’India",
+    titolo:"India: anima e respiro: yoga e meditazione tra i templi dell’India",
      stagione: ["primavera"],
      
       prezzo:1220 , 

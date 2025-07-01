@@ -21,6 +21,7 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    background-color:#F0F8FF ;
     
 }
 

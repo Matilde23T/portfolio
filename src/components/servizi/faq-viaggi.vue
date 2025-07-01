@@ -80,7 +80,7 @@ function toggle(index) {
   background-color: orange;
   display: flex;
   justify-content: center;
-  
+   background-color: #FB9062;
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
