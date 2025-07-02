@@ -95,6 +95,9 @@ Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
     background-color:#f7b7b7 ;
     background-color: #414a50;
     background-color: #eeeeee;
+    background-color: #ddeedf;
+    background-color: #99e6f2;
+
 
 }
 

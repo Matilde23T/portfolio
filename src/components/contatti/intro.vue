@@ -34,12 +34,21 @@
 
 .intro-section{
     width: 100%;
-    height: 29vh;
+    height: auto;
     background-color: rgb(58, 122, 207);
    display: flex;
    justify-content: center;
    flex-direction: column;
    justify-content: center;
+
+   
+   
+background-image: linear-gradient( 98.7deg,  rgba(6,238,243,1) 10.6%, rgba(34,126,209,1) 72.2%, rgba(35,44,51,1) 122.5%, rgba(35,44,51,1) 122.5% );
+
+
+
+background-image: linear-gradient( 112.2deg,  rgba(86,223,223,1) 4.7%, rgba(2,28,186,1) 110.1% );
+background-image: linear-gradient( 98.7deg,  rgba(6,238,243,1) 10.6%, rgba(34,126,209,1) 72.2%, rgba(35,44,51,1) 122.5%, rgba(35,44,51,1) 122.5% );
 }
 
 .logo{
@@ -58,7 +67,7 @@ width: 200px;
     width: 100%;
     height: 50%;
     text-align: center;
-    font-size: 35px;
+    font-size: 28px;
     padding: 40px;
      font-family: "DM Sans", sans-serif;
 

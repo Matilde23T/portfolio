@@ -361,7 +361,7 @@ const props = defineProps({
 
 const viaggi = [
   { id: 1, 
-    titolo: "Islanda del sud", 
+    titolo: "Islanda del Sud: tra ghiaccio, fuoco e meraviglia", 
     stagione: ["estate"], 
     prezzo: 1500,
      img: islanda, 
@@ -404,7 +404,7 @@ const viaggi = [
      },
 
      {id:5 , 
-    titolo:"Mauritius",
+    titolo:"Mauritius: onde lente, sogni luminosi",
     stagione: ["autunno", "primavera"],
      
       prezzo:1800 , 
@@ -465,7 +465,7 @@ const viaggi = [
      },
 
      {id: 10, 
-    titolo:"Bahamas",
+    titolo:"Bahamas: la tua fuga tropicale perfetta",
     stagione: ["inverno", "primavera"],
      
       prezzo: 1400, 
@@ -544,7 +544,7 @@ const viaggi = [
 
 
      {id: 16, 
-    titolo:"India: anima e respiro: yoga e meditazione tra i templi dell’India",
+    titolo:"India: anima e respiro, yoga e meditazione tra i templi dell’India",
      stagione: ["primavera"],
      
       prezzo:1220 , 
@@ -558,7 +558,7 @@ const viaggi = [
 
 
      {id: 17 , 
-    titolo:"Sharm El sheikh",
+    titolo:"Sharm El Sheikh: scopri il tesoro del Mar Rosso",
     stagione: ["primavera", "autunno"],
     
       prezzo: 1000 , 
@@ -586,7 +586,7 @@ const viaggi = [
      },
 
      {id: 19, 
-    titolo:"Maldive",
+    titolo:"Maldive: un Sogno di relax per due",
     stagione: ["inverno", "primavera"],
      
       prezzo: 1100 , 
@@ -599,7 +599,7 @@ const viaggi = [
      },
 
      {id: 20  , 
-    titolo:"Fiordi norvegesi",
+    titolo:"Fiordi Norvegesi: l’avventura ai confini del nord",
     stagione: ["primavera", "estate"],
     
       prezzo: 1600, 

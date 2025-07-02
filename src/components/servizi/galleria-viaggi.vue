@@ -47,7 +47,7 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
 
   
   const photos = [
-    img1,
+    
     img2,
     img3,
     img4,
@@ -97,8 +97,8 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
  <swiper :modules = "[EffectFlip, Pagination, Navigation]"
     :effect="'flip'"
     :grabCursor="true"
-    :pagination="true"
-    :navigation="true"
+:navigation="true"
+    
     
     
   >
@@ -125,31 +125,78 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
 }
 
 .container{
-    width: 80rem;
+    width:100%;
     height: auto;
     
     margin-top: 30px;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .swiper-slide img{
     width: 60rem;
-    height:auto;
+    max-height: 600px;
     
 }
+
+.swiper-slide{
+   
+    align-content: center;
+   
+    height: 600px;
+}
 .swiper{
-    width: 60rem;
+    width: 50%;
+    height: fit-content;
     margin-top: 50px;
+  
 }
 
 .titolo{
     width: 100%;
    
     font-family: "DM Sans", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     text-align: center;
     
     
+}
+
+
+@media (max-width:768px){
+    .titolo{
+        font-size: 25px;
+    }
+    .swiper{
+        width: 90%;
+        margin-top: 30px;
+    }
+    .swiper-slide img{
+    width: 100%;
+    max-height: 500px;
+    
+}
+.swiper-slide{
+    height: 300px;
+}
+}
+@media (min-width: 800px) and (max-width:1280px){
+     .titolo{
+        font-size: 35px;
+        
+    }
+     .swiper{
+        width: 90%;
+        margin-top: 30px;
+    }
+    .swiper-slide img{
+    width: 100%;
+    max-height: 600px;
+    
+}
+.swiper-slide{
+    height: 600px;
+}
 }
 </style>

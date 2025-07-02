@@ -121,6 +121,9 @@
      font-family: "DM Sans", sans-serif;
      padding: 50px;
      border-radius: 20px;
+      background-color:#F0F8FF ;
+      background-color: #c9e0ef;
+      background-color: #d0ecff;
 }
 
 .riquadro label{
@@ -188,6 +191,7 @@ textarea:focus{
      border: none;
      margin-top: 10px;
      font-weight: 600;
+     background-color: #0cc0df;
 }
 
 
@@ -241,14 +245,14 @@ textarea:focus{
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
-    background-color: yellow;
+   
     
 }
 
 .form{
    
     width: 100%;
-    background-color: red;
+   
     margin-top: 30px;
 
 }
@@ -263,7 +267,7 @@ textarea:focus{
     padding-bottom: 0px;
 }
 .riquadro{
-    background-color: rgb(167, 233, 233);
+   
     margin: 13px;
      
      padding: 20px;

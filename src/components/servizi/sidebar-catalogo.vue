@@ -360,7 +360,7 @@ li .icons {
 
 <style scoped>
 .catalogo-sidebar {
-  height: 80vh;
+  height: 100vh;
   width: 350px;
   z-index: 999;
   display: flex;
@@ -379,6 +379,8 @@ li .icons {
 background-color:#ffebeb;
 background-color: #fffafa;
 background-color: #ffe8d6;
+background-color:	#ffe5d4 ;
+background-color: #fff1eb;
 }
 .catalogo-sidebar .tipologie{
   margin-top: 20px;
@@ -404,7 +406,7 @@ margin-top: 30px;
 }
 .tipologie p{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 .tipologie .tipo{
@@ -427,7 +429,7 @@ margin-top: 30px;
     margin-top: 20px;
     display: flex;
     align-self: center;
-    font-weight: 600;
+    font-weight: 400;
     
 }
 li {
@@ -494,7 +496,9 @@ li .icons {
   border-radius: 20px;
   margin-left: 30px;
   font-size: 20px;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% );
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  color: #222831;
 }
 
 .close-button {

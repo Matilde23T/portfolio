@@ -104,10 +104,22 @@ font-size: 23px;
     .descrizionebox{
     width: 100%;
     height: auto;
-    
-    
+    background-color:	#FFD6B5 ;
+    background-color:	#FFD6B5 ;
+    background-color:#FF6361  ;
+     background-color: #60B5FF;
+     background-color: #f9e4b7;
+     background-color:#cce4ef ;
+     background-color:#b3e5f2 ;
+    background-color:	#FFD6B5 ;
+     background-color:#FF6361  ;
+     background-color: orange;
+     background-color:#ff9100 ;
+     background-color:	#FFD6B5 ;
+     background-color: #60B5FF;
  margin-bottom: 30px;
-
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
     }
 
     .box-testo{
