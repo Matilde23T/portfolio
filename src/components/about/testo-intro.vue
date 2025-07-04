@@ -37,6 +37,7 @@
      font-family: "Caprasimo", serif;
   font-weight: 400;
   line-height: 90px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .testobox{
     width: 100%;
@@ -60,7 +61,7 @@
 .testo{
     width: 100%;
     height: auto;
-    
+    line-height: 50px;
     
     font-size: 22px;
    
@@ -69,8 +70,9 @@
     
     padding-left: 10px;
     padding-right: 10px;
-   
-    height: 220px;
+    
+    height: 400px;
+    text-align: center;
   
    
 }
@@ -94,7 +96,7 @@
     height: auto;
     
     line-height: 80px;
-    font-size: 50px;
+    font-size: 40px;
    
 }
 

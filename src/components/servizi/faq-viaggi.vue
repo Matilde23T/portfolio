@@ -77,11 +77,11 @@ function toggle(index) {
 <style scoped>
 .faq {
   width: 100%;
-  background-color: orange;
+ /* background-color: orange;*/
   display: flex;
   justify-content: center;
-   background-color: #FB9062;
-   background-color:#ffb84d ;
+   /*background-color: #FB9062;*/
+ /*  background-color:#ffb84d ;*/
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -97,6 +97,7 @@ function toggle(index) {
 
 .pannello-totale{
     width: 90%;
+    
 }
 .accordion {
   background-color: rgb(250, 244, 236);
@@ -111,6 +112,7 @@ function toggle(index) {
    font-family: "DM Sans", sans-serif;
    font-size: 18px;
    font-weight: 600;
+   
 
 }
 .accordion #icona{

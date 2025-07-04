@@ -97,6 +97,7 @@ display: grid;
     justify-content: center;
     font-family: "DM Sans", sans-serif;
     border-radius: 20px !important;
+    
 
 /*margin: 60px;*/
     overflow: hidden;
@@ -134,7 +135,7 @@ display: grid;
     padding: 30px 15px;
 }
 .titolo{
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 15px;
     
     height: 90px;

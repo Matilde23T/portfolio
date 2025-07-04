@@ -157,7 +157,7 @@ height: 500px;
     width: 400px;
     height: 70px;
     border-radius: 20px;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% );
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     border: none;
 }
 
@@ -184,7 +184,7 @@ height: 500px;
 @media (max-width:768px){
     .viaggiBtn{
         
-        width: 70%;
+        width: 80%;
         height: 60px;
         
     }

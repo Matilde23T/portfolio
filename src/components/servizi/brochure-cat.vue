@@ -50,7 +50,8 @@ background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
      border-radius: 20px;
      cursor: pointer;
      border: none;
-
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #icona-dw{

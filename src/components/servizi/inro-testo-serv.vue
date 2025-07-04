@@ -40,6 +40,7 @@ import logo from '@/assets/img/logo/logo (2).png'
      font-family: "Caprasimo", serif;
   font-weight: 400;
   text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .testobox{
     width: 100%;
@@ -60,17 +61,18 @@ import logo from '@/assets/img/logo/logo (2).png'
     
 }
 .immagine{
-    width: 90px;
+    width: 100px;
 }
 .testo{
    
-   font-size: 27px;
+   font-size: 30px;
+   line-height: 50px;
     
 }
 .testobox{
     width: 100%;
-    
-    height: 300px;
+   
+    height: 400px;
     display: flex;
     
     align-items: center;

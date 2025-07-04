@@ -15,7 +15,7 @@ import logo from '@/assets/img/logo/logo (2).png'
         </p>
 </div>
 <div class="btn">
-    <button class="btn-cat">Scopri il nostro catalogo</button>
+    <button class="btn-cat"><RouterLink to="/services">Scopri il nostro catalogo</RouterLink></button>
 </div>
 </div>
 
@@ -46,6 +46,7 @@ import logo from '@/assets/img/logo/logo (2).png'
   font-weight: 400;
   line-height: 90px;
   text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .testobox{
     width: 100%;
@@ -73,6 +74,14 @@ border: none;
      font-weight: 600;
      background-color: #fbfbfb;
 }
+.btn-cat a{
+    color: black;
+    text-decoration: none;
+}
+.btn-cat:hover{
+    background-color:#dee2e6 ;
+    background-color:#e5e5e5 ;
+}
 @media (max-width:768px){
     .image{
     width: 100%;
@@ -82,7 +91,7 @@ border: none;
     
 }
 .immagine{
-    width:90px;
+    width:100px;
 }
 .testo{
    
@@ -115,6 +124,7 @@ border: none;
     margin-top: 60px;
     height: auto;
     text-align: center;
+
 }
 .btn-cat{
     padding: 15px 40px ;
@@ -123,8 +133,9 @@ background-color: #f7f7f7;
 border: none;
     border-radius: 20px;
      font-family: "DM Sans", sans-serif;
-     font-weight: 600;
+     font-weight: 500;
      background-color: #fbfbfb;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 }
 </style>

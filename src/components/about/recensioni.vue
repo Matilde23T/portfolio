@@ -161,9 +161,18 @@ import peoplerew3 from '@/assets/img/about-rec/foto3.jpg'
 }
 
 @media (max-width: 768px){
+    .sub-title{
+    font-size: 20px;
+    
+    
+}
 .prima-rec{
    
    flex-direction: column;
+   border-left: none;
+   
+   margin: 0;
+   width: 100%;
    
 }
 .testo2{
@@ -251,11 +260,21 @@ font-size: 16px;
     .recensioni{
         flex-direction: column;
         width: 100%;
+        margin-top: 20px;
+     
+        padding-top: 0px;
+        padding-bottom: 20px;
+        
+        
         
     }
     .testo{
         flex-direction: column;
         width: 100%;
+        padding: 0px;
+        margin-top: 0;
+        gap: 0px;
+        
         
     }
 }

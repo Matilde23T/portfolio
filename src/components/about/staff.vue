@@ -117,6 +117,16 @@ import img8 from '@/assets/img/staff/8.png'
   background-color: #c8b7d6;
   background-color:#4b1e2c ;
   background-color:#F0F8FF ;
+ /* background-color:#b6ccfe ;*/
+ /* background-color:#bbdefb ;*/
+/*  background-color: #E0FFFF;*/
+ /* background-color: #B0E0E6;*/
+  
+
+ /* background-color: #A8C8E8;*/
+
+
+  
   min-height: 100vh;
   padding: 40px;
   display: flex;
@@ -173,6 +183,12 @@ background-color: #fff;
 }
 
 @media (max-width: 768px){
+  .titolo{
+ 
+    
+    font-size: 33px;
+    
+}
   .staff{
     width: 100%;
   

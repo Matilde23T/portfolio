@@ -372,6 +372,7 @@ li .icons {
   background-color: #77bef8;
   color: #233142;
   padding: 20px;
+  
   overflow-y: auto;
    font-family: "DM Sans", sans-serif;
  border-top-right-radius: 20px;
@@ -381,6 +382,8 @@ background-color: #fffafa;
 background-color: #ffe8d6;
 background-color:	#ffe5d4 ;
 background-color: #fff1eb;
+
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .catalogo-sidebar .tipologie{
   margin-top: 20px;
@@ -390,12 +393,12 @@ background-color: #fff1eb;
 }
 
 .tipologie h3{
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 800;
 }
 
 .periodo h3{
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 800;
 }
 .tipologie .tipo{
@@ -452,7 +455,7 @@ li .icons {
 .periodo{
    
     
-    margin-top: 70px;
+    margin-top: 50px;
      margin-right: 30px;
      
 }
@@ -465,7 +468,7 @@ li .icons {
 
 .periodo .stagioni{
     list-style: none;
-     margin-top: 30px;
+     margin-top: 20px;
     
      
 }
@@ -499,6 +502,7 @@ li .icons {
   margin-top: 10px;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   color: #222831;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .close-button {

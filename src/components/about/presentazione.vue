@@ -10,11 +10,11 @@
     
         <div class="description">
         <p>
-Wayfinderè nasce come un gruppo di amici, viaggiatori e sognatori che hanno trasformato la loro passione per l'esplorazione in un progetto di vita.
+Wayfinder nasce come un gruppo di amici, viaggiatori e sognatori che hanno trasformato la loro passione per l'esplorazione in un progetto di vita.
 <br>
 Dopo aver condiviso cime, sentieri e tramonti in ogni angolo del mondo, abbiamo deciso di fondare un’<span class="strong">agenzia di viaggi che mette al centro l’autenticità delle esperienze, le connessioni umane e la bellezza dell’avventura.</span>
 <br>
-Con Wayfinderè puoi <span class="strong">scegliere tra itinerari già curati</span> dai nostri coordinatori oppure <span class="strong">richiedere un viaggio completamente personalizzato</span>, costruito su misura per te.
+Con Wayfinder puoi <span class="strong">scegliere tra itinerari già curati</span> dai nostri coordinatori oppure <span class="strong">richiedere un viaggio completamente personalizzato</span>, costruito su misura per te.
 <br>
 
 Con noi non prenoti semplicemente una destinazione: scegli un modo di viaggiare più consapevole, emozionante e autentico.
@@ -56,9 +56,10 @@ import team from '@/assets/img/team.jpg'
     width: 100%;
    
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     padding: 50px 20px;
+    padding-top: 20px;
     height: auto;
     align-items: center;
     margin-bottom: 40px;

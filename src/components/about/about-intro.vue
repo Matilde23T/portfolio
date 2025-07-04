@@ -90,7 +90,7 @@ onBeforeUnmount(() => {
     width: 100%;
     height: 100%;
      filter: brightness(0.7);
-     max-height: 400px;
+     height: 500px;
 }
 
 

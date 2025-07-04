@@ -22,6 +22,9 @@
     display: flex;
     justify-content: center;
     background-color:#F0F8FF ;
+    background-color:#caf0f8 ;
+    background-color:#ffeedd ;
+    background-color:#ffd8be ;
     
 }
 
@@ -36,7 +39,7 @@
 }
 
 .bio .title{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -46,6 +49,9 @@ text-decoration: none;
 color: black;
 }
 
+.contatti a:hover{
+  text-decoration: underline;
+}
 .contatti{
     font-size: 25px;
     padding: 20px 30px;

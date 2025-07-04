@@ -5,9 +5,9 @@ import navbar2 from '@/components/navbar-2.vue';
 import testoIntroHome from '@/components/home/testo-intro-home.vue';
 import riquadro from '@/components/home/riquadro.vue';
 import novità from '@/components/home/novità.vue';
-import intro2Home from '@/components/home/intro2-home.vue';
+import sectionHome from '@/components/home/section-home.vue';
 import footerSec from '@/components/footer-sec.vue';
-
+import sectionContenuto from '@/components/home/section-contenuto.vue';
 </script>
 
 <template>
@@ -21,15 +21,15 @@ import footerSec from '@/components/footer-sec.vue';
         </template>
   </introHome>
    
-  <riquadro></riquadro>
+  <riquadro/>
   
-<intro2Home></intro2Home>
+<sectionHome>
+  <template #contenuto-riquadro>
+       <sectionContenuto/>
+  </template>
+</sectionHome>
 
-<novità></novità>
-<footerSec></footerSec>
+<novità/>
+<footerSec/>
 </template>
 
-<style>
-
-
-</style>

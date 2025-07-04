@@ -113,6 +113,15 @@ import img4 from '@/assets/img/perchenoi/viaggio.png'
 
 
 @media (max-width: 768px) {
+  .sub-title{
+    
+   text-align: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 17px;
+    
+    
+    
+}
   .parent {
     grid-template-columns: 1fr;
     flex-wrap: wrap;

@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
     <div class="intro">
         <img :src="responsiveImage" class="img">
 
-         <div class="overlay-content">
+         <div class="overlay-content-intro1">
         
         <slot name="navbar"></slot>
         <slot name="testo-intro-home"></slot>
@@ -60,7 +60,7 @@ onBeforeUnmount(() => {
 }
 
 
-.overlay-content{
+.overlay-content-intro1{
      position: absolute;
   top: 0;
   left: 0;

@@ -169,11 +169,11 @@ padding-bottom: 30px;
 @media (max-width:768px){
     .titolo-sez{
   
-    font-size: 40px;
+    font-size: 35px;
       
-      font-weight: 500;
+      font-weight: 600;
    
-      margin-bottom: 30px;
+      margin-bottom: 40px;
 }
 .parent {
 
@@ -215,5 +215,63 @@ flex-wrap: wrap;
     
 
 }
+}
+@media only screen and (width: 768px) and (orientation: portrait) {
+  /* Regole solo per iPad Mini verticale */
+   .titolo-sez{
+  
+    font-size: 40px;
+      
+      
+      margin-bottom: 30px;
+}
+.parent {
+display: flex;
+justify-content: center;
+gap: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+
+}
+
+
+
+.item{
+width: 320px;
+ 
+}
+
+
+
+
+
+}
+@media (min-width: 800px) and (max-width:1280px){
+    .titolo-sez{
+  
+    font-size: 40px;
+      
+      
+      margin-bottom: 30px;
+}
+.parent {
+display: flex;
+justify-content: center;
+gap: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+
+}
+
+
+
+.item{
+width: 400px;
+ 
+}
+
+
+
+
 }
 </style>

@@ -103,6 +103,7 @@
 .form{
    
     width: 70%;
+   
 
 }
 
@@ -116,14 +117,19 @@
     padding-bottom: 20px;
 }
 .riquadro{
-    background-color: rgb(167, 233, 233);
+   /* background-color: rgb(167, 233, 233);*/
     margin: 30px;
      font-family: "DM Sans", sans-serif;
      padding: 50px;
      border-radius: 20px;
       background-color:#F0F8FF ;
-      background-color: #c9e0ef;
-      background-color: #d0ecff;
+     /* background-color: #f8f9fa;*/
+    /*  background-color: #c9e0ef;*/
+    /*  background-color: #d0ecff;*/
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      
+    /*  border: 0.5px solid black;*/
 }
 
 .riquadro label{
@@ -142,6 +148,9 @@
     margin-bottom: 20px;
     border-radius: 20px;
     border: none;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  }
 input:focus{
     outline: none;
@@ -169,6 +178,8 @@ textarea{
      border: none;
      margin-bottom: 20px;
 font-family: "DM Sans", sans-serif;
+background-color: #fff;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 textarea:focus{

@@ -97,7 +97,7 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
  <swiper :modules = "[EffectFlip, Pagination, Navigation]"
     :effect="'flip'"
     :grabCursor="true"
-:navigation="true"
+    :navigation="true"
     
     
     
@@ -132,23 +132,25 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
 .swiper-slide img{
-    width: 60rem;
+    width: 100%;
     max-height: 600px;
     
 }
 
 .swiper-slide{
-   
+    width: 80%;
     align-content: center;
-   
-    height: 600px;
+    
+    height:600px;
 }
 .swiper{
     width: 50%;
     height: fit-content;
     margin-top: 50px;
+   
   
 }
 

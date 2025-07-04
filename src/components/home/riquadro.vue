@@ -41,7 +41,7 @@
     text-align: center;
     
     background-color: #f7f7f7;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
     
 }
@@ -49,12 +49,12 @@
 .titolo{
     
     font-family: "DM Serif Text", serif;
-    font-size: 40px;
+    font-size: 42px;
     font-weight:600;
 }
 .sotto-titolo{
      font-family: "DM Sans", sans-serif;
-     font-size: 28px;
+     font-size: 25px;
      margin-top: 20px;
 }
 }
