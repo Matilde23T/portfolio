@@ -22,7 +22,7 @@
                     <p class="title"> Viaggio di laurea indimendicabile!
                     </p>
                     Ho deciso di affidarmi ad Wayfind travel per il mio viaggio di laurea, volevo trovare una meta paradisiaca lontano dallo stress, dove poter dedicarsi ad attività nella natura.
-                    Chiara, uno dei coordinatori di wayfind ha saputo gestire tutte le mie richieste, offrendo attività oltre lie aspettative. 
+                    Claudia, una dei coordinatori di wayfind ha saputo gestire tutte le mie richieste, offrendo attività oltre lie aspettative. 
                     Super consigliati!!!
                 </div>
             </div>

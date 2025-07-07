@@ -4,7 +4,7 @@
 <div class="personalizzazione">
         <div class="bio">
             <p class="title">Viaggi custom</p>
-          Desideri pianificare il viaggio dei tuoi sogni con Wayfinder? Compila la pagina contatti per ottenre una consulenza online o in sede
+          Desideri pianificare il viaggio dei tuoi sogni con Wayfinder? Compila la pagina contatti per ottenere una consulenza online o in sede
           <br>
           <button class="contatti">
             <RouterLink to="/contact">Vai alla pagina contatti</RouterLink>
@@ -68,7 +68,7 @@ color: black;
    
     font-size: 18px;
     text-align: center;
-    padding: 20px 20px;
+    padding: 40px 20px;
      
 
 }

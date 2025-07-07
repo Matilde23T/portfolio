@@ -6,7 +6,7 @@
 <section class="carousel">
 <div class="sub-title">
        <button class="viaggiBtn">
-<RouterLink to="/serivzi">Scopri le destinazioni</RouterLink>
+<RouterLink to="/services">Scopri le destinazioni</RouterLink>
        </button>
     </div>
 
@@ -15,7 +15,7 @@
 <div class="carousel-mete">
    <div class="container-crl">
   <Swiper :modules="[EffectCoverflow, Pagination, Autoplay]"
-  :autoplay="{delay: 5000}"
+  :autoplay="{delay: 2000}"
     :pagination="true"
    :effect="'coverflow'"
   :grabCursor="true"
@@ -159,6 +159,7 @@ height: 500px;
     border-radius: 20px;
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     border: none;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .viaggiBtn:hover{

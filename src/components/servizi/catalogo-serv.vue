@@ -12,7 +12,7 @@
           </div>
           <div class="descrizione">
             <h3 class="titolo">{{ viaggio.titolo }}</h3>
-            <span class="sotto-titolo">Periodo: {{ viaggio.stagione.join(', ') }}</span>
+            <span class="sotto-titolo"><span class="strong">Periodo:</span> {{ viaggio.stagione.join(', ') }}</span>
             <br>
             <!----  <span class="tipo">Tipo: {{ viaggio.tipo.join(', ')}}</span>-->
            
@@ -142,6 +142,9 @@ display: grid;
 
 }
 
+.strong{
+  font-weight: 500 ;
+}
 .img{
     width: 100%;
     height: 100%;

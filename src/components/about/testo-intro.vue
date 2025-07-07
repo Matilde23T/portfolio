@@ -56,14 +56,14 @@
     
 }
 .immagine{
-    width: 90px;
+    width: 100px;
 }
 .testo{
     width: 100%;
     height: auto;
     line-height: 50px;
     
-    font-size: 22px;
+    font-size: 25px;
    
 }
 .testobox{
@@ -80,6 +80,38 @@
 
     
 }
+
+
+@media only screen and (width: 768px) and (orientation: portrait) {
+    .image{
+   
+    margin-top: 10px;
+    
+}
+.immagine{
+    width: 120px;
+}
+.testo{
+    width: 100%;
+    height: auto;
+    line-height: 50px;
+    
+    font-size: 32px;
+   
+}
+.testobox{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    height: 320px;
+    text-align: center;
+  
+   
+}
+
+}
+
 @media (min-width: 800px) and (max-width:1280px){
     .image{
     width: 100%;
@@ -89,14 +121,14 @@
     
 }
 .immagine{
-    width: 200px;
+    width: 150px;
 }
 .testo{
     width: 100%;
     height: auto;
     
     line-height: 80px;
-    font-size: 40px;
+    font-size: 45px;
    
 }
 

@@ -1,5 +1,5 @@
 <script setup>
-import foto from '@/assets/img/home/foto.jpg'
+
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
 // Percorsi immagine (usa `@/assets/...` o `new URL(..., import.meta.url)` se necessario)
@@ -38,6 +38,8 @@ onBeforeUnmount(() => {
     
 </template>
 
+
+
 <style scoped>
 .sectionHome {
   position: relative;
@@ -51,7 +53,12 @@ onBeforeUnmount(() => {
   height: 700px;
   object-fit: cover;
   filter: brightness(0.7);
+
+
+
 }
+
+
 
 .overlay-box {
   position: absolute;

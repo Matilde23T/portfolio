@@ -117,7 +117,7 @@
     padding-bottom: 20px;
 }
 .riquadro{
-   /* background-color: rgb(167, 233, 233);*/
+   
     margin: 30px;
      font-family: "DM Sans", sans-serif;
      padding: 50px;
@@ -126,10 +126,10 @@
      /* background-color: #f8f9fa;*/
     /*  background-color: #c9e0ef;*/
     /*  background-color: #d0ecff;*/
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       
-    /*  border: 0.5px solid black;*/
+    
 }
 
 .riquadro label{
@@ -325,7 +325,7 @@ textarea{
     margin-top: 20px;
     width: 100%;
     font-size: 15px;
-     padding: 10px 15px;
+     padding: 20px 15px;
      
      margin-bottom: 10px;
 
@@ -402,7 +402,7 @@ textarea{
 .form{
    
    width: 100%;
-    background-color: red;
+    
     margin-top: 30px;
 
 }
@@ -411,13 +411,13 @@ textarea{
     width: 100%;
    
    
-    font-size: 23px;
+    font-size: 25px;
    
     padding-top: 20px;
     padding-bottom: 0px;
 }
 .riquadro{
-    background-color: rgb(167, 233, 233);
+    
     margin: 40px;
      
      padding: 20px;
@@ -465,7 +465,7 @@ textarea{
     margin-top: 20px;
     width: 100%;
     font-size: 18px;
-     padding: 10px 15px;
+     padding: 20px 15px;
      
      margin-bottom: 10px;
 

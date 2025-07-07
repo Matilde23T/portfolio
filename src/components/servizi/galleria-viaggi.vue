@@ -43,7 +43,7 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
  
 
   // import required modules
-  import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
+  import { EffectFlip, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
   
   const photos = [
@@ -94,10 +94,11 @@ import img30 from '@/assets/img/clienti-foto/31.jpg'
 
     <div class="container">
         <span class="titolo">Scatti dai Nostri Viaggiatori</span>
- <swiper :modules = "[EffectFlip, Pagination, Navigation]"
+ <swiper :modules = "[EffectFlip, Pagination, Navigation, Autoplay]"
     :effect="'flip'"
     :grabCursor="true"
     :navigation="true"
+    :autoplay="{delay: 3000}"
     
     
     

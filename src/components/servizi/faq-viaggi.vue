@@ -42,7 +42,7 @@ const items = [
     },
     { 
     title: 'Come posso acquistare un pacchetto compreso nel catalogo?',
-     content: 'Per acquistare un pacchetto compreso nel catalogo basta completare la pagina di contatti con il vostro nome, indirizzo email e numero di telefono per ottenere una completa consulenza in sede, per chiamata o online via Zoom o Google Meet' 
+     content: 'Per acquistare un pacchetto compreso nel catalogo basta completare la pagina di contatti con il vostro nome, indirizzo email per ottenere una completa consulenza in sede, per chiamata o online via Zoom o Google Meet' 
     },
     { 
     title: 'è possibile personalizzare i dettagli viaggio di una destinazione presente nel catalogo?',
@@ -50,7 +50,7 @@ const items = [
     },
      { 
     title: 'Che metodi di pagamento accettate?',
-     content: 'Acettiamo come metodi di pagamento: bonifici bancari e pagamenti con PayPal' 
+     content: 'Accettiamo come metodi di pagamento: bonifici bancari e pagamenti con PayPal' 
     },
      { 
     title: 'Cosa devo fare per annullare il viaggio?',
@@ -156,13 +156,21 @@ font-size: 28px;
     text-align: center;
 }
 .pannello-totale .title2{
-margin-top: 40px;
+margin-top: 30px;
 font-size: 20px;
     
     font-weight: 600;
     margin-bottom: 20px;
 }
+.accordion {
+  
+ 
+  
+  padding: 20px 20px;
+  font-size: 16px;
+   
 
+}
 }
 
 @media (min-width: 800px) and (max-width:1280px){

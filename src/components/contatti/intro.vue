@@ -23,9 +23,7 @@
      position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateX(-50%);
-  color: white;
-  text-align: center;*/
+  
   z-index: 10;
   
   width: 100%;
@@ -82,6 +80,8 @@ width: 200px;
 .intro-section{
     width: 100%;
     height:auto;
+padding-top: 20px;
+   padding-bottom: 20px;
    
    
 }
@@ -89,7 +89,7 @@ width: 200px;
 
 
 .img{
-width: 200px;
+width: 130px;
 }
 
 

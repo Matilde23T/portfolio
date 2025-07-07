@@ -154,16 +154,23 @@ import img4 from '@/assets/img/perchenoi/viaggio.png'
     .parent{
         width: 100%;
         gap: 20px;
-       
-    }
-    
+      grid-template-columns: repeat(2, 1fr); 
+      display: grid;
+
+}
+    .item {
+ 
+  padding: 20px;
+  width: 100%;
+  
+}
 
     .icons{
         width: 100px;
     }
 
     .item p{
-    font-size: 18px;
+    font-size: 20px;
     
   }
 

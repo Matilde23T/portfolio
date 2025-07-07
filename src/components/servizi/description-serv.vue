@@ -65,7 +65,7 @@ background-color: #FB9062;
  background-color:#ff9100 ;
 	
 
-
+color: #233142;
 
  display: flex;
  justify-content: center;

@@ -86,7 +86,7 @@ import logo from '@/assets/img/logo/logo (2).png'
     width: 100%;  
 }
 .immagine{
-    width: 140px;
+    width: 150px;
 }
 .testo{
     

@@ -68,7 +68,7 @@ import img8 from '@/assets/img/staff/8.png'
            <p class="nome">Giulia Bronte</p>
            <p class="sub-title">Wedding planner romantica e organizzata, Giulia trasforma ogni luna di miele in un viaggio da sogno.
             <br>
-             Specializzata in destinazioni romantiche come le Seychelles, Bali e la Costiera Amalfitana.</p>
+             Specializzata in destinazioni romantiche come le Maldive, Bali e Bahamas.</p>
 </div>
 
  <div class="item">
@@ -229,13 +229,55 @@ grid-row-gap: 20px;
     
     
 }
+}
+@media only screen and (width: 768px) and (orientation: portrait){
+   .titolo{
+ 
+    
+    font-size: 33px;
+    
+}
+  .staff{
+    width: 100%;
+  
+ 
+  padding: 20px;
+  
+    
+  
+}
+  .parent {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-column-gap: 10px;
+grid-row-gap: 30px;
+}
+
+.item{
+  width: 100%;
+  padding: 30px;
+}
 
 
+.item .nome{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
-
+.item .sub-title{
+    font-size: 18px;
 
 }
 
+.image{
+    width: 160px;
+    
+    
+}
+}
 @media (min-width:800px) and (max-width:1280px){
   .staff{
     width: 100%;
