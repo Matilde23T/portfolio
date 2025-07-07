@@ -17,7 +17,7 @@ import imgperu from   '@/assets/img/catalogo/peru.jpg'
 <div class="item">
 <div class="card">
           <div class="foto">
-            <img :src="imgindia" class="img" />
+            <img :src="imgindia" class="img"loading="lazy" />
            </div>
 
           <div class="descrizione">
@@ -37,7 +37,7 @@ import imgperu from   '@/assets/img/catalogo/peru.jpg'
 <div class="item">
 <div class="card">
           <div class="foto">
-            <img :src="imgperu" class="img" />
+            <img :src="imgperu" class="img" loading="lazy"/>
            </div>
 
           <div class="descrizione">

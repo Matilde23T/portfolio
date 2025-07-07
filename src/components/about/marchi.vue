@@ -5,9 +5,9 @@
 </div>
 
 <div class="marchi">
-    <img :src="espresso" class="imgmarchio">
-    <img :src="sole" class="imgmarchio">
-    <img :src="forbes" class="imgmarchio">
+    <img :src="espresso" class="imgmarchio"loading="lazy">
+    <img :src="sole" class="imgmarchio"loading="lazy">
+    <img :src="forbes" class="imgmarchio"loading="lazy">
 </div>
 
 

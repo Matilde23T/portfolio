@@ -30,7 +30,7 @@ onBeforeUnmount(() => {
 <template>
   
 <div class="sectionHome">
-        <img :src="responsiveImageSection" class="image"/>
+        <img :src="responsiveImageSection" class="image" loading="lazy"/>
 <div class="overlay-box">
       <slot name="contenuto-riquadro"></slot>
     </div>

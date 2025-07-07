@@ -5,7 +5,7 @@
       <div class="item" v-for="viaggio in viaggiFiltrati" :key="viaggio.id">
         <div class="card">
           <div class="foto">
-            <img :src="viaggio.img" class="img" />
+            <img :src="viaggio.img" class="img" loading="lazy"/>
             <div class="overlay-content">
               <div v-if="viaggio.etichetta" class="etichetta">{{ viaggio.etichetta }}</div>
             </div>

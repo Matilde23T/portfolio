@@ -1,29 +1,17 @@
-# .
+# Wayfinder Travel
 
-This template should help get you started developing with Vue 3 in Vite.
+I present to you "wayfinder Travel" a project built with Vite and Vue.js, which presents a prototype of a travel agency website
 
-## Recommended IDE Setup
+## External platforms used
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Swiper (used for image carousels)
+- Fontawesome
+- Google Font
 
-## Customize configuration
+## Try it!
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+You can take a look at the project through this link[Wayfinder Travel](https://wayfindertravel.netlify.app/)
 
-## Project Setup
+## Contact me
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+For information or advice on the project write to: [matilde.webdev@gmail.com](matilde.webdev@gmail.com)
