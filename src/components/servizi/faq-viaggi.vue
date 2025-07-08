@@ -62,7 +62,7 @@ const items = [
     },
     {
      title: 'E se succedono imprevisti durante il viaggio?',
-     content: 'Dopo aver concordato la pianificazione del viaggio e completato il pagamento, il cliente avrà a disposizione un file PDF con la completa predisposizione del itinerario di viaggio con tutti i dettagli previsti (luogo e orario di partenza con aereo, orari delle attività, orari di apertura e chiusura di musei, parchi ecc.), il coordinatore di Wayfineder che vi ha seguito nella pianificazione sarà sempre a vostra disposizione, sarà lui a indicarvi preventivamente eventuali imprevisti e vi aiuterà nel rimanere nel comform anche durante gli imprevisti. Avrete a disposizione un numero di telefono, contatto email e numero di telefono della sede' 
+     content: 'Dopo aver concordato la pianificazione del viaggio e completato il pagamento, il cliente avrà a disposizione un file PDF con la completa predisposizione del itinerario di viaggio con tutti i dettagli previsti (luogo e orario di partenza con aereo, orari delle attività, orari di apertura e chiusura di musei, parchi ecc.), il coordinatore di Wayfinder che vi ha seguito nella pianificazione sarà sempre a vostra disposizione, sarà lui a indicarvi preventivamente eventuali imprevisti e vi aiuterà nel rimanere nel comfort anche durante gli imprevisti. Avrete a disposizione un numero di telefono, contatto email e numero di telefono della sede' 
     },
 
 ];

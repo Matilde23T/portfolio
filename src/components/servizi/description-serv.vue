@@ -1,9 +1,9 @@
 <template>
     <div class="descrizionebox">
         <div class="box-testo">
-        <p class="titolo">Wayfind Travel – Il viaggio come lo vuoi tu.</p>
+        <p class="titolo">Wayfinder Travel – Il viaggio come lo vuoi tu.</p>
 <p class=" testo">
-Che tu sogni un trekking dai panorami mozzafiato, uno snorkeling tra i coralli o un tuffo nelle tradizioni, Wayfind Travel trasforma <span class="strong">i tuoi desideri in esperienze indimenticabili.</span> 
+Che tu sogni un trekking dai panorami mozzafiato, uno snorkeling tra i coralli o un tuffo nelle tradizioni, Wayfinder Travel trasforma <span class="strong">i tuoi desideri in esperienze indimenticabili.</span> 
 <br>
 Dalle <span class="strong">avventure nella natura al relax in spiagge da sogno</span>, fino ai viaggi culturali più autentici: abbiamo <span class="strong">proposte per ogni stile e curiosità.</span>
 Scopri il nostro <span class="strong">catalogo online o crea il tuo viaggio su misura</span> con i nostri esperti, pronti a <span class="strong">guidarti passo dopo passo.</span>
@@ -14,7 +14,7 @@ Scopri il nostro <span class="strong">catalogo online o crea il tuo viaggio su m
 </p>
 
 <p class="sotto-testo">
-Con Wayfind Travel, non parti solo. Parti ispirato.</p>
+Con Wayfinder Travel, non parti solo. Parti ispirato.</p>
 </div>
     </div>
 </template>

@@ -22,7 +22,7 @@
                     <p class="title"> Viaggio di laurea indimendicabile!
                     </p>
                     Ho deciso di affidarmi ad Wayfinder travel per il mio viaggio di laurea, volevo trovare una meta paradisiaca lontano dallo stress, dove poter dedicarsi ad attività nella natura.
-                    Claudia, una dei coordinatori di wayfinder ha saputo gestire tutte le mie richieste, offrendo attività oltre lie aspettative. 
+                    Claudia, una dei coordinatori di wayfinder ha saputo gestire tutte le mie richieste, offrendo attività oltre le aspettative. 
                     Super consigliati!!!
                 </div>
             </div>
@@ -234,13 +234,7 @@ font-size: 16px;
     height: auto;
     display: flex;
     justify-content: center;
- background-color:#ecfeff;
- background-color:#89CFF0 ;
- background-color:#caf0f8 ;
- background-color: #bbdefb;
- background-color:#c7eeff ;
- background-color:#AFDBF5 ;
- background-color:#F0F8FF ;
+    background-color:#F0F8FF ;
  margin-bottom: 30px;
 }
 

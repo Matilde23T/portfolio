@@ -8,10 +8,10 @@
 
 
         <div class="col1">
-            <h3>Wayfind travel</h3>
+            <h3>Wayfinder travel</h3>
             <p>Via Roma 123, 00100 Roma (RM)</p>
             <p>>Tel: +39 06 1234567</p>
-            <p>Email: info@wayfindTRavel.it</p>
+            <p>Email: info@wayfinderTRavel.it</p>
             <p>Orari: Lun–Ven 9:00–18:00</p>
         </div>
 
@@ -63,7 +63,7 @@
             <p>Wayfinder Travel S.R.L.
 Sede legale: Via Roma 123, 00100 Roma (RM)
 Cod. Fiscale / P.IVA: 01234567890 – REA: RM-123456
-Capitale sociale €10.000 i.v. – PEC: wayfindtravel@pec.it
+Capitale sociale €10.000 i.v. – PEC: wayfindertravel@pec.it
 © 2025 Wayfinder Travel S.R.L. – Tutti i diritti riservati</p>
          </div>
          </div>
