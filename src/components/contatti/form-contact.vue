@@ -287,7 +287,7 @@ textarea:focus{
 
 .riquadro label{
    
-    font-size: 18px;
+    font-size: 16px;
     
     font-weight: 600;
     
@@ -374,7 +374,7 @@ textarea{
   
  
   
-   font-size: 18px;
+   font-size: 16px;
    
 }
 

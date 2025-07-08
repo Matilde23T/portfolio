@@ -121,7 +121,7 @@ import team from '@/assets/img/team.jpg'
   
   text-align: left;
   
-   font-size: 18px;
+   font-size: 16px;
     width: 100%;
     
     

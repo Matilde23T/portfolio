@@ -10,7 +10,7 @@ I present to you "wayfinder Travel" a project built with Vite and Vue.js, which 
 
 ## Try it!
 
-You can take a look at the project through this link[Wayfinder Travel](https://wayfindertravel.netlify.app/)
+You can take a look at the project through this link: [Wayfinder Travel](https://wayfindertravel.netlify.app/)
 
 ## Contact me
 

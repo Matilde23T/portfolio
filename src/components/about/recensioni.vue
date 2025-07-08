@@ -21,8 +21,8 @@
                 <div class="testo2">
                     <p class="title"> Viaggio di laurea indimendicabile!
                     </p>
-                    Ho deciso di affidarmi ad Wayfind travel per il mio viaggio di laurea, volevo trovare una meta paradisiaca lontano dallo stress, dove poter dedicarsi ad attività nella natura.
-                    Claudia, una dei coordinatori di wayfind ha saputo gestire tutte le mie richieste, offrendo attività oltre lie aspettative. 
+                    Ho deciso di affidarmi ad Wayfinder travel per il mio viaggio di laurea, volevo trovare una meta paradisiaca lontano dallo stress, dove poter dedicarsi ad attività nella natura.
+                    Claudia, una dei coordinatori di wayfinder ha saputo gestire tutte le mie richieste, offrendo attività oltre lie aspettative. 
                     Super consigliati!!!
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="testo2">
                     <p class="title"> Miglior vacanza delle mia vita</p>
-                    Grazie all’agenzia, ho vissuto una delle esperienze più belle della mia vita! Edimburgo è una città magica: il Castello, la Royal Mile, i pub tradizionali… ogni angolo ha qualcosa da raccontare. L’organizzazione è stata impeccabile: volo puntuale, hotel centralissimo e tour guidati davvero ben fatti. Un ringraziamento speciale a Laura dell’agenzia, sempre disponibile e attenta ai dettagli. Tornerò sicuramente a viaggiare con voi!
+                    Grazie all’agenzia, ho vissuto una delle esperienze più belle della mia vita! Edimburgo è una città magica: il Castello, la Royal Mile, i pub tradizionali… ogni angolo ha qualcosa da raccontare. L’organizzazione è stata impeccabile: volo puntuale, hotel centralissimo e tour guidati davvero ben fatti. Un ringraziamento speciale a Edoardo dell’agenzia, sempre disponibile e attento ai dettagli. Tornerò sicuramente a viaggiare con voi!
                 </div>
             </div>
 
@@ -149,12 +149,12 @@ import peoplerew3 from '@/assets/img/about-rec/foto3.jpg'
 }
 
 .testo2{
-    font-size: 18px;
+    font-size: 16px;
    
 }
 
 .testo2 .title{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 17px;
     margin-bottom: 20px;

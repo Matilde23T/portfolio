@@ -139,11 +139,11 @@ import img4 from '@/assets/img/perchenoi/viaggio.png'
   }
 
   .item p{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .item h3{
-    font-size: 22px;
+    font-size: 20px;
   }
   
 }
