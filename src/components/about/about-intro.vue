@@ -1,12 +1,4 @@
 <script setup>
-import img1 from '@/assets/img/about-intro/1.jpg'
-import img2 from '@/assets/img/about-intro/2.jpg'
-import img3 from '@/assets/img/about-intro/3.jpg'
-//ok
-import img5 from '@/assets/img/about-intro/5.jpg'
-import img6 from '@/assets/img/about-intro/6.png'
-import img7 from '@/assets/img/about-intro/7.jpg'
-import img7cut from '@/assets/img/about-intro/7-cut.jpg'
 
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 // Percorsi immagine (usa `@/assets/...` o `new URL(..., import.meta.url)` se necessario)
@@ -68,9 +60,6 @@ onBeforeUnmount(() => {
      position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateX(-50%);
-  color: white;
-  text-align: center;*/
   z-index: 10;
 
   height:auto;

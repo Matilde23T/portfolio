@@ -32,15 +32,7 @@
 
 
 <style scoped >
- /*navabar*/
-  /*
-  nav {
-  background-color: green;
-  box-shadow: 3px 3px 5px rgba(245, 244, 244, 0.1);
-  position: relative;
-}
 
-*/
 
 .sidebar {
   position: fixed;
@@ -59,7 +51,7 @@ text-align: center;
 
 
   padding-top: 20px;
-  background-color: red;
+  
   background: rgba(12, 192, 223, 1);
 
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

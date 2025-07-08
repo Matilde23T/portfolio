@@ -107,26 +107,7 @@ import img8 from '@/assets/img/staff/8.png'
 }
 .staff{
     width: 100%;
-  background-color:#cef2f8;
-  background-color:#c7eeff ;
-  background-color: #AFDBF5;
-  background-color: #1E90FF;
-  background-color: #ff6e40;
-  background-color:#1a2636 ;
-  background-color: #9fb4c7;
-  background-color: #c8b7d6;
-  background-color:#4b1e2c ;
-  background-color:#F0F8FF ;
- /* background-color:#b6ccfe ;*/
- /* background-color:#bbdefb ;*/
-/*  background-color: #E0FFFF;*/
- /* background-color: #B0E0E6;*/
-  
-
- /* background-color: #A8C8E8;*/
-
-
-  
+ background-color:#F0F8FF ;
   min-height: 100vh;
   padding: 40px;
   display: flex;

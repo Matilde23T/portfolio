@@ -17,13 +17,9 @@
 <style scoped>
 .personalizzazione{
     width: 100%;
-    background-color:#90e0ef;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    background-color:#F0F8FF ;
-    background-color:#caf0f8 ;
-    background-color:#ffeedd ;
     background-color:#ffd8be ;
     
 }

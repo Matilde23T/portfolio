@@ -27,13 +27,7 @@
 .contenitore{
 width: 100%;
 display: flex;
-  /* altezza totale della viewport meno eventuale header (vedi sotto) */
-  
-
-
-/*modifhce */
-
- flex-direction: row;
+flex-direction: row;
   width: 100%;
   height: 100vh;
  
@@ -45,40 +39,15 @@ display: flex;
 }
 .catalogo-scrollabile{
 
-  /*
- width: 100%;
-  display: flex;
-  justify-content: center;
-  
-  height: 100%;
-background-color: cornflowerblue;
-  margin-left: 0px; 
-  flex: 1;
-  overflow-y: auto;
-  height: auto;
-  margin-bottom: 50px;
-  */
-
 flex: 1;
-  overflow-y: auto;
-
-
+overflow-y: auto;
 height: auto;
 
 }
 
 .sidebar-container {
 
-/*
- width: 350px;
-  
-  top: 80px; 
-  align-self: flex-start; 
-  height: calc(100vh - 80px); 
-*/
-
-
-width: 350px;
+  width: 350px;
   flex-shrink: 0;
 
 
@@ -86,32 +55,11 @@ width: 350px;
 }
 
 
-/*
-@media (max-width:768px){
-  .sidebar-container{
-   
-   width: 100px;
-  
-  }
-
-  .catalogo-scrollabile{
-    background-color: aqua;
-     width: 100%;
- 
-  
-  }
-
-  .contenitore{
-    background-color: green;
-  }
-}
-
-*/
 
 @media (max-width:768px){
   .sidebar-container{
     width: 100%; /* prende tutta la larghezza in verticale */
-    order: 1;     /* se vuoi che vada sopra */
+    order: 1;     
   }
 
   .catalogo-scrollabile{

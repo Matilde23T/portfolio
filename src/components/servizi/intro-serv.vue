@@ -1,9 +1,6 @@
 <script setup>
 
-import imgIntro3 from  '@/assets/img/viaggi-intro/intro3.jpg'
-import imgIntro4 from  '@/assets/img/viaggi-intro/intro4.jpg'
-import imgIntro5 from  '@/assets/img/viaggi-intro/intro5.jpg'
-import imgIntro5cut from '@/assets/img/viaggi-intro/intro5-cut.jpg'
+
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
 // Percorsi immagine (usa `@/assets/...` o `new URL(..., import.meta.url)` se necessario)
@@ -65,9 +62,6 @@ onBeforeUnmount(() => {
      position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateX(-50%);
-  color: white;
-  text-align: center;*/
   z-index: 10;
   
   width: 100%;
@@ -89,9 +83,7 @@ onBeforeUnmount(() => {
      position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateX(-50%);
-  color: white;
-  text-align: center;*/
+ 
   z-index: 10;
   
   width: 100%;

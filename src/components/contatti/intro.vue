@@ -32,26 +32,11 @@
 .intro-section{
     width: 100%;
     height: auto;
-    background-color: rgb(58, 122, 207);
+
    text-align: center;
    padding-top: 40px;
    padding-bottom: 60px;
-
-   
-   
-background-image: linear-gradient( 98.7deg,  rgba(6,238,243,1) 10.6%, rgba(34,126,209,1) 72.2%, rgba(35,44,51,1) 122.5%, rgba(35,44,51,1) 122.5% );
-background: linear-gradient(135deg, #E0F7FA, #B2EBF2, #80DEEA);
-background: linear-gradient(135deg, #FFE0B2, #FFCCBC, #FFAB91);
-background: radial-gradient(circle, #00BCD4 0%, #E0F7FA 100%);
-background: linear-gradient(135deg, #001F3F, #007C91);
-background: linear-gradient(135deg, #2E2E2E, #000000);
-background: linear-gradient(135deg, #00BCD4, #004D5E);
-
-background: linear-gradient(135deg, #00BCD4, #FF6F00);
-background: linear-gradient(135deg, #D0F1F7, #84C8DB);
-background: linear-gradient(135deg, #A0D3E8, #5B9EA5);
-background: linear-gradient(135deg, #E6F4F6, #A8DADC);
-background: linear-gradient(135deg, #4BA3C7, #D2F2F8);
+   background: linear-gradient(135deg, #4BA3C7, #D2F2F8);
 
 
 

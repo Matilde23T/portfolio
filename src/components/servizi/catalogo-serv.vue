@@ -62,16 +62,6 @@
 
 
 .parent {
-/*display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(7, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-
-margin-bottom: 60px;
-background-color: aqua;
-height: auto;*/
-
 display: grid;
   grid-template-columns: repeat(3, 1fr);
   
@@ -83,7 +73,7 @@ display: grid;
 
 
 
-/* gap: 20px;*/
+
 }
 
 
@@ -99,14 +89,11 @@ display: grid;
     border-radius: 20px !important;
     
 
-/*margin: 60px;*/
+
     overflow: hidden;
     
 
-/*ultime mdo */
-/*
-    width: 100%;
-  max-width: 420px;*/
+
 }
 .card{
     width: 90%;
@@ -170,9 +157,7 @@ display: grid;
   position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateX(-50%);
-  color: white;
-  text-align: center;*/
+  
   z-index: 2;
  
    color: white;

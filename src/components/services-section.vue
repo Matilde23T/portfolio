@@ -1,9 +1,5 @@
 <template>
-   <!---- <div class="navbar">
- <slot name="navbar2"></slot>
-</div>
---->
-
+  
 <slot name="intro"></slot>
 </template>
 
